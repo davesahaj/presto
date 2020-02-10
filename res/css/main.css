@@ -1,20 +1,4 @@
 
-    @font-face {
-        font-family: Poppins-Regular;
-
-        src: url('../fonts/poppins/Poppins-Regular.ttf');
-    }
-
-    @font-face {
-        font-family: Poppins-Bold;
-        src: url('../fonts/poppins/Poppins-Bold.ttf');
-    }
-
-    @font-face {
-        font-family: Poppins-Medium;
-        src: url('../fonts/poppins/Poppins-Medium.ttf');
-    }
-
     .login-pic {
         width: 337px;
         height: 345px;
@@ -23,7 +7,6 @@
       .login-pic img {
         max-width: 100%;
       }
-
       
     * {
         margin: 0px;
