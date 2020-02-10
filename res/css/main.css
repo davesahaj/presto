@@ -68,8 +68,13 @@
     }
 
     .textbox1 {
+<<<<<<< HEAD
             border: 2px solid #456879;
             border-radius: 10px;
+=======
+            border:2px solid #a636f1;
+            border-radius:10px;
+>>>>>>> 76bba1862ff6c36756924b32704c0bc46b412533
             height: 22px;
             width: 230px;
     }
