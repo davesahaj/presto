@@ -1,261 +1,267 @@
-    /* ------------------------------------ */
-    .text-center {
-        text-align: center;
-    }
+/*---------------------------------------------
+Last Modified: Sahaj Dave
+Description: page/line elements alias.
+---------------------------------------------*/
 
-    .text-left {
-        text-align: left;
-    }
+.text-center {
+    text-align: center;
+}
 
-    .text-right {
-        text-align: right;
-    }
+.text-left {
+    text-align: left;
+}
 
-    .text-middle {
-        vertical-align: middle;
-    }
+.text-right {
+    text-align: right;
+}
 
-    /* ------------------------------------ */
-    .lh-1-0 {
-        line-height: 1.0;
-    }
-
-    .lh-1-1 {
-        line-height: 1.1;
-    }
-
-    .lh-1-2 {
-        line-height: 1.2;
-    }
-
-    .lh-1-3 {
-        line-height: 1.3;
-    }
-
-    .lh-1-4 {
-        line-height: 1.4;
-    }
-
-    .lh-1-5 {
-        line-height: 1.5;
-    }
-
-    .lh-1-6 {
-        line-height: 1.6;
-    }
-
-    .lh-1-7 {
-        line-height: 1.7;
-    }
-
-    .lh-1-8 {
-        line-height: 1.8;
-    }
+.text-middle {
+    vertical-align: middle;
+}
 
-    .lh-1-9 {
-        line-height: 1.9;
-    }
-
-    .lh-2-0 {
-        line-height: 2.0;
-    }
-
-    .lh-2-1 {
-        line-height: 2.1;
-    }
-
-    .lh-2-2 {
-        line-height: 2.2;
-    }
-
-    .lh-2-3 {
-        line-height: 2.3;
-    }
-
-    .lh-2-4 {
-        line-height: 2.4;
-    }
-
-    .lh-2-5 {
-        line-height: 2.5;
-    }
-
-    .lh-2-6 {
-        line-height: 2.6;
-    }
+/* ------------------------------------ */
 
-    .lh-2-7 {
-        line-height: 2.7;
-    }
+.lh-1-0 {
+    line-height: 1.0;
+}
 
-    .lh-2-8 {
-        line-height: 2.8;
-    }
+.lh-1-1 {
+    line-height: 1.1;
+}
+
+.lh-1-2 {
+    line-height: 1.2;
+}
+
+.lh-1-3 {
+    line-height: 1.3;
+}
+
+.lh-1-4 {
+    line-height: 1.4;
+}
+
+.lh-1-5 {
+    line-height: 1.5;
+}
+
+.lh-1-6 {
+    line-height: 1.6;
+}
 
-    .lh-2-9 {
-        line-height: 2.9;
-    }.lh-3-0 {
-        line-height: 3.0;
-    }
+.lh-1-7 {
+    line-height: 1.7;
+}
 
+.lh-1-8 {
+    line-height: 1.8;
+}
 
-    /* ------------------------------------ */
+.lh-1-9 {
+    line-height: 1.9;
+}
 
-    .dis-none {
-        display: none;
-    }
+.lh-2-0 {
+    line-height: 2.0;
+}
 
-    .dis-block {
-        display: block;
-    }
+.lh-2-1 {
+    line-height: 2.1;
+}
 
-    .dis-inline {
-        display: inline;
-    }
+.lh-2-2 {
+    line-height: 2.2;
+}
 
-    .dis-inline-block {
-        display: inline-block;
-    }
+.lh-2-3 {
+    line-height: 2.3;
+}
 
-    .dis-flex {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -moz-box;
-        display: -ms-flexbox;
-        display: flex;
-    }
+.lh-2-4 {
+    line-height: 2.4;
+}
 
-    /* ------------------------------------ */
+.lh-2-5 {
+    line-height: 2.5;
+}
 
-    .pos-relative {
-        position: relative;
-    }
+.lh-2-6 {
+    line-height: 2.6;
+}
 
-    .pos-absolute {
-        position: absolute;
-    }
+.lh-2-7 {
+    line-height: 2.7;
+}
 
-    .pos-fixed {
-        position: fixed;
-    }
+.lh-2-8 {
+    line-height: 2.8;
+}
 
-    /* ------------------------------------ */
+.lh-2-9 {
+    line-height: 2.9;
+}
 
-    .float-l {
-        float: left;
-    }
+.lh-3-0 {
+    line-height: 3.0;
+}
 
-    .float-r {
-        float: right;
-    }
+/* ------------------------------------ */
 
-    /* ------------------------------------ */
+.dis-none {
+    display: none;
+}
 
-    .sizefull {
-        width: 100%;
-        height: 100%;
-    }
+.dis-block {
+    display: block;
+}
 
-    .w-full {
-        width: 100%;
-    }
+.dis-inline {
+    display: inline;
+}
 
-    .h-full {
-        height: 100%;
-    }
+.dis-inline-block {
+    display: inline-block;
+}
 
-    .max-w-full {
-        max-width: 100%;
-    }
+.dis-flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+}
 
-    .max-h-full {
-        max-height: 100%;
-    }
+/* ------------------------------------ */
 
-    .min-w-full {
-        min-width: 100%;
-    }
+.pos-relative {
+    position: relative;
+}
 
-    .min-h-full {
-        min-height: 100%;
-    }
+.pos-absolute {
+    position: absolute;
+}
 
-    /* ------------------------------------ */
+.pos-fixed {
+    position: fixed;
+}
 
-    .top-0 {
-        top: 0;
-    }
+/* ------------------------------------ */
 
-    .bottom-0 {
-        bottom: 0;
-    }
+.float-l {
+    float: left;
+}
 
-    .left-0 {
-        left: 0;
-    }
+.float-r {
+    float: right;
+}
 
-    .right-0 {
-        right: 0;
-    }
+/* ------------------------------------ */
 
-    .top-auto {
-        top: auto;
-    }
+.sizefull {
+    width: 100%;
+    height: 100%;
+}
 
-    .bottom-auto {
-        bottom: auto;
-    }
+.w-full {
+    width: 100%;
+}
 
-    .left-auto {
-        left: auto;
-    }
+.h-full {
+    height: 100%;
+}
 
-    .right-auto {
-        right: auto;
-    }
+.max-w-full {
+    max-width: 100%;
+}
 
-    /* ------------------------------------ */
+.max-h-full {
+    max-height: 100%;
+}
 
-    .op-0-0 {
-        opacity: 0;
-    }
+.min-w-full {
+    min-width: 100%;
+}
 
-    .op-0-1 {
-        opacity: 0.1;
-    }
+.min-h-full {
+    min-height: 100%;
+}
 
-    .op-0-2 {
-        opacity: 0.2;
-    }
+/* ------------------------------------ */
 
-    .op-0-3 {
-        opacity: 0.3;
-    }
+.top-0 {
+    top: 0;
+}
 
-    .op-0-4 {
-        opacity: 0.4;
-    }
+.bottom-0 {
+    bottom: 0;
+}
 
-    .op-0-5 {
-        opacity: 0.5;
-    }
+.left-0 {
+    left: 0;
+}
 
-    .op-0-6 {
-        opacity: 0.6;
-    }
+.right-0 {
+    right: 0;
+}
 
-    .op-0-7 {
-        opacity: 0.7;
-    }
+.top-auto {
+    top: auto;
+}
 
-    .op-0-8 {
-        opacity: 0.8;
-    }
+.bottom-auto {
+    bottom: auto;
+}
 
-    .op-0-9 {
-        opacity: 0.9;
-    }
+.left-auto {
+    left: auto;
+}
 
-    .op-1-0 {
-        opacity: 1;
-    }
+.right-auto {
+    right: auto;
+}
+
+/* ------------------------------------ */
+
+.op-0-0 {
+    opacity: 0;
+}
+
+.op-0-1 {
+    opacity: 0.1;
+}
+
+.op-0-2 {
+    opacity: 0.2;
+}
+
+.op-0-3 {
+    opacity: 0.3;
+}
+
+.op-0-4 {
+    opacity: 0.4;
+}
+
+.op-0-5 {
+    opacity: 0.5;
+}
+
+.op-0-6 {
+    opacity: 0.6;
+}
+
+.op-0-7 {
+    opacity: 0.7;
+}
+
+.op-0-8 {
+    opacity: 0.8;
+}
+
+.op-0-9 {
+    opacity: 0.9;
+}
+
+.op-1-0 {
+    opacity: 1;
+}

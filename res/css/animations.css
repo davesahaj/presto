@@ -1,0 +1,51 @@
+/*---------------------------------------------
+Last Modified: Sahaj Dave
+Description: Definitations of the globally used animations.
+---------------------------------------------*/
+
+@-webkit-keyframes anim-shadow {
+    to {
+        box-shadow: 0px 0px 70px 25px;
+        opacity: 0;
+    }
+}
+
+@keyframes anim-shadow {
+    to {
+        box-shadow: 0px 0px 70px 25px;
+        opacity: 0;
+    }
+}
+
+@keyframes loginBG {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes loginLogo {
+    0% {
+        top: 0px;
+        transform: rotate(-20deg);
+    }
+    25% {
+        top: 15px;
+    }
+    50% {
+        top: 0px;
+        transform: rotate(20deg);
+    }
+    75% {
+        top: 15px;
+    }
+    100% {
+        top: 0px;
+        transform: rotate(-20deg);
+    }
+}

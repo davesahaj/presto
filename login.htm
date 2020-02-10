@@ -6,11 +6,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="res/css/main.css">
+    <link rel="stylesheet" href="res/css/login.css">
     <link rel="stylesheet" href="res/css/extras.css">
     <link rel="stylesheet" href="res/css/fonts.css">
     <link rel="stylesheet" href="res/css/margin.css">
     <link rel="stylesheet" href="res/css/padding.css">
+    <link rel="stylesheet" href="res/css/elements.css">
+    <link rel="stylesheet" href="res/css/animations.css">
 </head>
 
 <body>
@@ -20,29 +22,21 @@
 
                 <div class="login-pic">
                     <img src="res/images/presto.png" alt="Logo">
-                    
-                    <input type="text" class="textbox1">
                 </div>
-                
-                <form class="login-form validate-form" action="">
+
+                <form class="login-form" action="">
                     <span class="login-form-title">
                         Presto Login
                     </span>
 
-                    <div class="form-input validate" data-validate="Valid email is required: name@abc.xyz">
+                    <div class="form-input">
                         <input class="input-text" type="text" name="email" placeholder="Email">
                         <span class="focus-input-text"></span>
-                        <span class="input-symbol">
-                            <i class="" aria-hidden="true"></i>
-                        </span>
                     </div>
 
-                    <div class="form-input validate" data-validate="Password is required">
+                    <div class="form-input">
                         <input class="input-text" type="password" name="pass" placeholder="Password">
                         <span class="focus-input-text"></span>
-                        <span class="input-symbol">
-                            <i class="" aria-hidden="true"></i>
-                        </span>
                     </div>
 
                     <div class="login-form-button-container">
@@ -50,12 +44,12 @@
                     </div>
 
                     <div class="text-center p-t-12">
-                        <span class="text1">Forgot</span>
-                        <a class="text2" href="#">Username / Password?</a>
+                        <span class="text-1">Forgot</span>
+                        <a class="text-2" href="recover.htm">Username / Password?</a>
                     </div>
 
                     <div class="text-center p-t-136">
-                        <a class="text2" href="#">
+                        <a class="text-2" href="register.htm">
                             Create New Account
                             <i class="m-l-5" aria-hidden="true"></i>
                         </a>
