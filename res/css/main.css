@@ -31,8 +31,7 @@
         box-sizing: border-box;
     }
 
-    body,
-    html {
+    body, html {
         height: 100%;
         font-family: Poppins-Regular, sans-serif;
     }
@@ -68,6 +67,13 @@
         border: none;
     }
 
+    .textbox1 {
+            border:2px solid #456879;
+            border-radius:10px;
+            height: 22px;
+            width: 230px;
+        
+    }
 
     textarea:focus,
     input:focus {
