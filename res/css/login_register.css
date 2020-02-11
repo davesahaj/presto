@@ -35,34 +35,31 @@ class tags appearance in login.htm and register.htm file.
     padding: 50px 100px 50px 100px;
 }
 
-.login-pic-container {
+.recovery-wrapper {
+    justify-content: center;
+}
+
+.logo-pic-container {
     position: relative;
     top: 0px;
     animation: loginLogo ease 10s infinite;
 }
 
-.login-pic {
+.logo-pic {
     width: 337px;
     height: 345px;
 }
 
-.register-pic-container {
-    position: relative;
-    top: 0px;
-    animation: registerLogo ease 10s infinite;
-}
-
-.register-pic {
-    width: 337px;
-    height: 345px;
-}
-
-.login-pic img {
+.logo-pic img {
     max-width: 100%;
 }
 
 .main-form {
     width: 290px;
+}
+
+.recovery-form {
+    width: 400px;
 }
 
 .main-form-title {
@@ -161,4 +158,12 @@ class tags appearance in login.htm and register.htm file.
 
 .text-2:hover {
     font-size: 15px;
+}
+
+.text-3 {
+    font-family: Poppins-Regular;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #666666;
+    text-decoration: none;
 }
