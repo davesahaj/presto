@@ -32,7 +32,7 @@ Description: Definitations of the globally used animations.
 @keyframes loginLogo {
     0% {
         top: 0px;
-        transform: rotate(-20deg);
+        transform: rotate(-10deg);
     }
     25% {
         top: 15px;
@@ -46,6 +46,27 @@ Description: Definitations of the globally used animations.
     }
     100% {
         top: 0px;
-        transform: rotate(-20deg);
+        transform: rotate(-10deg);
+    }
+}
+
+@keyframes registerLogo {
+    0% {
+        top: 0px;
+        transform: rotate(-10deg);
+    }
+    25% {
+        top: 55px;
+    }
+    50% {
+        top: 0px;
+        transform: rotate(20deg);
+    }
+    75% {
+        top: 55px;
+    }
+    100% {
+        top: 0px;
+        transform: rotate(-10deg);
     }
 }

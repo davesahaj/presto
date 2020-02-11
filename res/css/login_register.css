@@ -19,7 +19,7 @@ class tags appearance in login.htm and register.htm file.
     justify-content: center;
     align-items: center;
     padding: 15px;
-    background: linear-gradient(45deg, rgb(240, 47, 208), #28b8f1);
+    background: linear-gradient(45deg, rgb(240, 47, 208), #28b8f1, MediumSeaGreen);
     background-size: 250% 250%;
     animation: loginBG 8s ease infinite;
 }
@@ -35,25 +35,31 @@ class tags appearance in login.htm and register.htm file.
     padding: 50px 100px 50px 100px;
 }
 
-.login-pic {
+.recovery-wrapper {
+    justify-content: center;
+}
+
+.logo-pic-container {
     position: relative;
-    width: 337px;
-    height: 345px;
     top: 0px;
     animation: loginLogo ease 10s infinite;
 }
 
-.register-pic {
-    width: ;
-    height: ;
+.logo-pic {
+    width: 337px;
+    height: 345px;
 }
 
-.login-pic img {
+.logo-pic img {
     max-width: 100%;
 }
 
 .main-form {
     width: 290px;
+}
+
+.recovery-form {
+    width: 400px;
 }
 
 .main-form-title {
@@ -152,4 +158,12 @@ class tags appearance in login.htm and register.htm file.
 
 .text-2:hover {
     font-size: 15px;
+}
+
+.text-3 {
+    font-family: Poppins-Regular;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #666666;
+    text-decoration: none;
 }
