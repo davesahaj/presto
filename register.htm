@@ -1,12 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <title>Register</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Register</title>
+    <link rel="stylesheet" href="res/css/extras.css">
+    <link rel="stylesheet" href="res/css/fonts.css">
+    <link rel="stylesheet" href="res/css/margin.css">
+    <link rel="stylesheet" href="res/css/padding.css">
+    <link rel="stylesheet" href="res/css/login_register.css">
+    <link rel="stylesheet" href="res/css/elements.css">
+    <link rel="stylesheet" href="res/css/animations.css">
 </head>
+
 <body>
-    
+
+    <div class="limit">
+        <div class="register-container">
+            <div class="register-wrapper">
+
+                <div class="register-pic">
+                    <img src="res/images/presto.png" alt="logo">
+                </div>
+
+                <form class="register-form" action="">
+                    <span class="register-form-title">
+                        Presto Registration
+                    </span>
+
+                    <div class="form-input">
+                        <input class="input-text" type="text" name="firstname" placeholder="First Name">
+                        <span class="focus-input-text"></span>
+
+                    </div>
+                    <div class="form-input">
+                        <input class="input-text" type="text" name="lastname" placeholder="Last Name">
+                        <span class="focus-input-text"></span>
+                    </div>
+
+                    <div class="form-input">
+                        <input class="input-text" type="email" name="email" placeholder="Email">
+                        <span class="focus-input-text"></span>
+                    </div>
+
+                    <div class="form-input">
+                        <input class="input-text" type="password" name="password" placeholder="Password">
+                        <span class="focus-input-text"></span>
+                    </div>
+
+                    <div class="form-input">
+                        <input class="input-text" type="password" name="passowrd_cnf" placeholder="Confirm Password">
+                        <span class="focus-input-text"></span>
+                    </div>
+
+                    <div class="form-input">
+                        <input class="input-text" type="text" pattern="[6789][0-9]{9}" name="phone"
+                            placeholder="Phone Number">
+                        <span class="focus-input-text"></span>
+                    </div>
+
+                    <div class="form-select">
+                        <select name="zone" placeholder="Area">
+                            <option value="Satellite">Satellite</option>
+                            <option value="Maninagar">Maninagar</option>
+                            <option value="Navrangpura">Navrangpura</option>
+                            <option value="Saraspur">Saraspur</option>
+                            <option value="Bopal">Bopal</option>
+                            <option value="Naroda">Naroda</option>
+                            <option value="Ranip">Ranip</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
 </body>
+
 </html>
