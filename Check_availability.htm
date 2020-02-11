@@ -7,20 +7,28 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Check availability</title>
 
-    <link rel="stylesheet" href="res/css/main.css">
+    <link rel="stylesheet" href="res/css/elements.css">
     <link rel="stylesheet" href="res/css/extras.css">
 </head>
 
 <body>
     <section id="main">
-        <section id="c_a_heading">
+        <section id="heading">
             <center><h1>SELECT TIME AND DATE FOR YOUR RESERVATION</h1></center>
         </section>
-        <section id="c_a_content">
-            <input type="text" class="textbox1" id="tb1">
-            <input type="button" id="btn1" nam value="summit">
+        <section id="content">
+            <form>
+                <input type="button" class="button-1" onclick="msg()" value="summit">
+                <input type="text" class="textbox-1">
+            </form>
         </section>
     </section>
+
+    <script>
+    function msg() {
+      alert("Hello world!");
+    }
+    </script>
 </body>
 
 </html>
