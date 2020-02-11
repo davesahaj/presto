@@ -47,6 +47,12 @@ input {
     border: none;
 }
 
+input::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0px;
+  }
+
 /*---------------------------------------------*/
 
 textarea {
@@ -60,14 +66,19 @@ button {
     background: transparent;
 }
 
-button-1 {
-    background-color: red; /* Green */
-    border: 2;
+.button-1 {
+    height: 50px;
+    width: 100px;
+    background-color:green; /* Green */
+    border: 1;
+    border-radius: 8px;
     color: white;
-    padding: 15px 32px;
+    padding: 8px;
     text-align: center;
     font-size: 16px;
 }
+
+
 
 button:hover {
     cursor: pointer;
@@ -82,6 +93,20 @@ button:hover {
     margin: 8px 0;
     outline: none;
     padding: 8px;
+    box-sizing: border-box;
+    transition: .5s;
+}
+
+.textbox-2 {
+    height: 50px;
+    width: 200px;
+    border: 2px solid #aaa;
+    border-radius: 10px;
+    margin: 8px;
+    outline: none;
+    padding: 8px;
+    text-align: center;
+    font-size: 20px;
     box-sizing: border-box;
     transition: .5s;
 }

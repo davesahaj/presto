@@ -9,18 +9,29 @@
 
     <link rel="stylesheet" href="res/css/elements.css">
     <link rel="stylesheet" href="res/css/extras.css">
+    <link rel="stylesheet" href="res/css/check_a.css"
 </head>
 
 <body>
     <section id="main">
-        <section id="heading">
-            <center><h1>SELECT TIME AND DATE FOR YOUR RESERVATION</h1></center>
+        <section class="heading">
+            <center><h1 style="padding-top: 40px">SELECT TIME AND DATE FOR YOUR RESERVATION</h1></center>
         </section>
-        <section id="content">
-            <form>
-                <input type="button" class="button-1" onclick="msg()" value="summit">
-                <input type="text" class="textbox-1">
-            </form>
+        <section class="content">
+            
+                <form>
+                    <div class="form-div">
+                        <input type="date" class="textbox-2">
+                        <div class="flex2" >
+                            <input type="time" class="textbox-time">
+                            <img class="clock" src="res/images/clock_logo.jpg" style="height: 50px; width: 50" alt="">
+                        </div>
+                        <input type="number" class="textbox-2">
+                        <input type="button" class="button-1_c" onclick="msg()" value="Check availability">
+                    </div>
+                        
+                </form>
+            
         </section>
     </section>
 
