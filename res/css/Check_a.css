@@ -1,74 +1,98 @@
-#main {
-    margin-left: 100px;
-    margin-right: 100px;
+.limit {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.main-container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background: #fff;
+}
+
+.main-wrapper {
+    width: 75%;
+    background: #006DFB;
+    border-radius: 50px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px 100px 50px 100px;
 }
 
 .heading {
+    border-radius: 50px;
     height: 100px;
     width: 100%;
-    background-color: brown;
 }
 
-.content {
-    height: 300px;
+.h-title {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: Poppins-Bold;
+    font-size: 28px;
+    color: #FD1A4A;
+    line-height: 1.2;
+    text-align: center;
+    background: #FDAF00;
+    border-radius: 50px;
     width: 100%;
-    background-color: coral;
+    display: block;
+    text-transform: uppercase;
 }
 
-.textbox-c_a {
-    height: 50px;
-    width: 200px;
-    border: 2px solid #aaa;
-    border-radius: 10px;
-    margin: 8px;
-    outline: none;
-    padding: 8px;
-    text-align: center;
-    font-size: 20px;
-    box-sizing: border-box;
-    transition: .5s;
-}
-
-.button-1_c {
-    height: 50px;
-    background-color: maroon; /* Green */
-    border: 1;
-    margin: 8px;
-    border-radius: 8px;
-    color: white;
-    padding: 8px;
-    text-align: center;
-    font-size: 16px;
-}
-
-.form-div {
-    margin: auto;
+.main-form {
+    width: 100%;
+    background: #9F006F;
+    border-radius: 50px;
+    overflow: hidden;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px 100px 50px 100px;
 }
 
 
+.form-input {
+    position: relative;
+    width: auto;
+    z-index: 1;
+    display: block;
+    margin-bottom: 10px;
+}
 
-.flex2 {
+.text-3 {
+    font-family: Poppins-Regular;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #ffffff;
+    text-decoration: none;
     display: flex;
-    flex-direction: row;
-    margin: 8px;
-    border: 2px solid #aaa;
-    border-radius: 10px;
-    background-color: white;
+    flex-wrap: wrap;
 }
 
-.textbox-time {
+.form-button {
+    font-family: Poppins-Regular;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #fff;
+    text-transform: uppercase;
+    width: 100%;
     height: 50px;
-    width: 200px;
-    outline: none;
-    text-align: center;
-    font-size: 20px;
-    box-sizing: border-box;
-    transition: .5s;
-    border-radius: 10px;
+    border-radius: 25px;
+    background: #FD001B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 25px;
+    transition: all 0.4s;
 }
 
-.clock {
-    border-radius: 10px;
+.form-button:hover {
+    background: #FDCC00;
 }

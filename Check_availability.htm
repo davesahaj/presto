@@ -4,42 +4,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Check availability</title>
 
     <link rel="stylesheet" href="res/css/elements.css">
+    <link rel="stylesheet" href="res/css/fonts.css">
     <link rel="stylesheet" href="res/css/extras.css">
-    <link rel="stylesheet" href="res/css/check_a.css"
+    <link rel="stylesheet" href="res/css/Check_a.css">
+    <link rel="stylesheet" href="res/css/animations.css">
+    <link rel="stylesheet" href="res/css/margin.css">
+    <link rel="stylesheet" href="res/css/padding.css">
 </head>
+
+
+<body>
+    <div class="limit">
+
+        <section class="main-container">
+
+            <section class="main-wrapper">
+                <header class="heading">
+                    <span class="h-title">select time and date for your reservation</span>
+                </header>
+
+
+                <form class="main-form">
+
+                    <div class="form-input">
+                        <span class="text-3">Date:</span>
+                        <input class="textbox-2" type="date">
+
+                        <span class="text-3">Time:</span>
+                        <input type="time" class="textbox-2">
+                    </div>
+                    <div class="form-input">
+                        <span class="text-3">People:</span>
+                        <input type="number" class="textbox-2">
+                    </div>
+
+                    <input type="button" class="form-button" value="Check availability">
+                </form>
+
+            </section>
+
+        </section>
+
+    </div>
+</body>
+
+
+
+<!--
 
 <body>
     <section id="main">
+
         <section class="heading">
-            <center><h1 style="padding-top: 40px">SELECT TIME AND DATE FOR YOUR RESERVATION</h1></center>
+
+            <center>
+                <h1 style="padding-top: 40px">SELECT TIME AND DATE FOR YOUR RESERVATION</h1>
+            </center>
+
         </section>
+
         <section class="content">
-            
-                <form>
-                    <div class="form-div">
-                        <input type="date" class="textbox-2">
-                        <div class="flex2" >
-                            <input type="time" class="textbox-time">
-                            <img class="clock" src="res/images/clock_logo.jpg" style="height: 50px; width: 50" alt="">
-                        </div>
-                        <input type="number" class="textbox-2">
-                        <input type="button" class="button-1_c" onclick="msg()" value="Check availability">
+
+            <form>
+
+                <div class="form-div">
+                    <input type="date" class="textbox-2">
+
+                    <div class="flex2">
+
+                        <input type="time" class="textbox-time">
+                        <img class="clock" src="res/images/clock_logo.jpg" style="height: 50px; width: 50" alt="">
+
                     </div>
-                        
-                </form>
-            
+
+                    <input type="number" class="textbox-2">
+                    <input type="button" class="button-1_c" onclick="msg()" value="Check availability">
+
+                </div>
+
+            </form>
+
         </section>
+
     </section>
 
-    <script>
-    function msg() {
-      alert("Hello world!");
-    }
-    </script>
 </body>
 
-</html>
+</html>-->
