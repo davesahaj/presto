@@ -1,0 +1,122 @@
+/*---------------------------------------------
+Last Modified: Sahaj Dave
+Description: collections of definition for generic CSS tags across all pages.
+sorting order is the default elements first and then the custom classes
+---------------------------------------------*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*---------------------------------------------*/
+
+body, html {
+    height: 100%;
+    font-family: Poppins-Regular, sans-serif;
+}
+
+/*---------------------------------------------*/
+
+a {
+    font-family: Poppins-Regular;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #555;
+    margin: 0px;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+}
+
+a:focus {
+    outline: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #53b641;
+}
+
+/*---------------------------------------------*/
+
+input {
+    outline: none;
+    border: none;
+}
+
+input::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0px;
+  }
+
+/*---------------------------------------------*/
+
+textarea {
+    outline: none;
+    border: none;
+}
+
+button {
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
+.button-1 {
+    height: 50px;
+    width: 100px;
+    background-color:green; /* Green */
+    border: 1;
+    border-radius: 8px;
+    color: white;
+    padding: 8px;
+    text-align: center;
+    font-size: 16px;
+}
+
+
+
+button:hover {
+    cursor: pointer;
+}
+
+/*---------------------------------------------*/
+
+.textbox-1 {
+    width: 100%;
+    border: 2px solid #aaa;
+    border-radius: 20px;
+    margin: 8px 0;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    transition: .5s;
+}
+
+.textbox-1:focus {
+    border-color: dodgerBlue;
+    box-shadow: 0 0 8px 0 dodgerBlue;
+}
+
+.textbox-2 {
+    height: 50px;
+    width: 200px;
+    border: 2px solid #aaa;
+    border-radius: 20px;
+    margin: 10px;
+    outline: none;
+    text-align: center;
+    font-size: 15px;
+    box-sizing: border-box;
+    transition: .5s;
+}
+.textbox-2:focus {
+    border-color: dodgerBlue;
+    box-shadow: 0 0 8px 0 dodgerBlue;
+}
+
+/*---------------------------------------------*/
