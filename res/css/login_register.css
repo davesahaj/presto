@@ -46,8 +46,8 @@ class tags appearance in login.htm and register.htm file.
 }
 
 .logo-pic {
-    width: 337px;
-    height: 345px;
+    width: 30vw;
+    height: 31vw;
 }
 
 .logo-pic img {
@@ -64,39 +64,39 @@ class tags appearance in login.htm and register.htm file.
 
 .main-form-title {
     font-family: Poppins-Bold;
-    font-size: 28px;
+    font-size: 4vmin;
     color: #333;
     line-height: 1.2;
     text-align: center;
     width: 100%;
     display: block;
-    padding-bottom: 50px;
+    padding-bottom: 5vmin;
 }
 
 .form-input {
     position: relative;
     width: 100%;
     z-index: 1;
-    margin-bottom: 10px;
+    margin-bottom: 1vmin;
 }
 
 .input-text {
     font-family: Poppins-Medium;
-    font-size: 15px;
+    font-size: 2vmin;
     line-height: 1.5;
     color: #666666;
     display: block;
     width: 100%;
     background: #e6e6e6;
     height: 50px;
-    border-radius: 25px;
-    padding: 0 30px 0 20px;
+    border-radius: 3vmin;
+    padding: 0 1.2vmin 0 2vmin;
 }
 
 .focus-input-text {
     display: block;
     position: absolute;
-    border-radius: 25px;
+    border-radius: 1vmin;
     bottom: 0;
     left: 0;
     z-index: -1;
@@ -116,23 +116,23 @@ class tags appearance in login.htm and register.htm file.
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding-top: 25px
+    padding-top: 2vmin;
 }
 
 .form-button {
     font-family: Poppins-Regular;
-    font-size: 15px;
+    font-size: 2vmin;
     line-height: 1.5;
     color: #fff;
     text-transform: uppercase;
     width: 100%;
-    height: 50px;
-    border-radius: 25px;
+    height: 6vh;
+    border-radius: 3vmin;
     background: MediumSeaGreen;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 25px;
+    padding: 0 2vmin;
     transition: all 0.4s;
 }
 
@@ -142,7 +142,7 @@ class tags appearance in login.htm and register.htm file.
 
 .text-1 {
     font-family: Poppins-Regular;
-    font-size: 13px;
+    font-size: 2vmin;
     line-height: 1.5;
     color: #888;
     text-decoration: none;
@@ -150,19 +150,19 @@ class tags appearance in login.htm and register.htm file.
 
 .text-2 {
     font-family: Poppins-Regular;
-    font-size: 13px;
+    font-size: 2vmin;
     line-height: 1.5;
     color: #666666;
     text-decoration: none;
 }
 
 .text-2:hover {
-    font-size: 15px;
+    font-size: 2vmin;
 }
 
 .text-3 {
     font-family: Poppins-Regular;
-    font-size: 18px;
+    font-size: 2vmin;
     line-height: 1.5;
     color: #666666;
     text-decoration: none;
