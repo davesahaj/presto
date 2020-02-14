@@ -11,7 +11,9 @@
     justify-content: center;
     align-items: center;
     padding: 15px;
-    background: #fff;
+    background: linear-gradient(45deg, rgb(240, 47, 208), #28b8f1, MediumSeaGreen);
+    background-size: 250% 250%;
+    animation: loginBG 8s ease infinite;
 }
 
 .main-wrapper {
@@ -56,7 +58,6 @@
     justify-content: space-between;
     padding: 50px 100px 50px 100px;
 }
-
 
 .form-input {
     position: relative;
