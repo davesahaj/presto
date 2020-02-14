@@ -107,13 +107,14 @@ button:hover {
     width: 200px;
     border: 2px solid #aaa;
     border-radius: 20px;
-    margin: 10px;
+    margin: 1vw;
     outline: none;
     text-align: center;
     font-size: 15px;
     box-sizing: border-box;
     transition: .5s;
 }
+
 .textbox-2:focus {
     border-color: dodgerBlue;
     box-shadow: 0 0 8px 0 dodgerBlue;
