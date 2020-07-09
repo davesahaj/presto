@@ -1,26 +1,7 @@
 /* Scripts for css grid dashboard */
-
-$(document).ready(() => {
-  addResizeListeners();
+function afterPageLoad(){
   setSidenavListeners();
   setUserDropdownListener();
-  renderChart();
-  setMenuClickListener();
-  setSidenavCloseListener();
-});
-
-// Set constants and grab needed elements
-const sidenavEl = $(".sidenav");
-const gridEl = $(".grid");
-const SIDENAV_ACTIVE_CLASS = "sidenav--active";
-const GRID_NO_SCROLL_CLASS = "grid--noscroll";
-
-function toggleClass(el, className) {
-  if (el.hasClass(className)) {
-    el.removeClass(className);
-  } else {
-    el.addClass(className);
-  }
 }
 
 // User avatar dropdown functionality
@@ -82,6 +63,29 @@ function setSidenavListeners() {
     });
   });
 }*/
+
+/*$(document).ready(() => {
+  addResizeListeners();
+  renderChart();
+  setMenuClickListener();
+  setSidenavCloseListener();
+});
+
+// Set constants and grab needed elements
+const sidenavEl = $(".sidenav");
+const gridEl = $(".grid");
+const SIDENAV_ACTIVE_CLASS = "sidenav--active";
+const GRID_NO_SCROLL_CLASS = "grid--noscroll";
+
+function toggleClass(el, className) {
+  if (el.hasClass(className)) {
+    el.removeClass(className);
+  } else {
+    el.addClass(className);
+  }
+}
+
+
 
 
 
@@ -205,4 +209,4 @@ function setSidenavCloseListener() {
     toggleClass(sidenavEl, SIDENAV_ACTIVE_CLASS);
     toggleClass(gridEl, GRID_NO_SCROLL_CLASS);
   });
-}
+}*/
