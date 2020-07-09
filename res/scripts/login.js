@@ -25,20 +25,46 @@ function toggleClass(el, className) {
 
 // User avatar dropdown functionality
 function setUserDropdownListener() {
-  const userAvatar = $(".header__avatar");
+  const userAvatar1 = document.getElementsByClassName("header__avatar");
 
-  userAvatar.on("click", function (e) {
-    const dropdown = $(this).children(".dropdown");
-    toggleClass(dropdown, "dropdown--active");
+  userAvatar1[0].addEventListener("click", function() {
+    const dropdown1 = this.children;
+    dropdown1[0].classList.toggle("dropdown--active");
   });
 }
+/*function setUserDropdownListener() {
+  const userAvatar = $(".header__avatar");
+  userAvatar.on("click", function (e) {
+    const dropdown = $(this).children(".dropdown");
+    console.log("hi");
+    console.log(dropdown);
+    toggleClass(dropdown, "dropdown--active");
+  });
+}*/
 
 // Sidenav list sliding functionality
+
 function setSidenavListeners() {
+  const subHeadings1 = document.getElementsByClassName("navList__subheading");
+  var j;
+
+  for (j = 0; j < subHeadings1.length; j++) {
+  subHeadings1[j].addEventListener("click", function() {
+    const subList1 = this.nextElementSibling;
+    if(this){
+        this.classList.toggle("navList__subheading--open");
+    }
+    if(subList1){
+        subList1.classList.toggle("subList--hidden");
+    }
+  });
+  }
+}
+/*function setSidenavListeners() {
   const subHeadings = $(".navList__subheading");
-  console.log("subHeadings: ", subHeadings);
   const SUBHEADING_OPEN_CLASS = "navList__subheading--open";
   const SUBLIST_HIDDEN_CLASS = "subList--hidden";
+
 
   subHeadings.each((i, subHeadingEl) => {
     $(subHeadingEl).on("click", (e) => {
@@ -55,7 +81,9 @@ function setSidenavListeners() {
       }
     });
   });
-}
+}*/
+
+
 
 // Draw the chart
 function renderChart() {
