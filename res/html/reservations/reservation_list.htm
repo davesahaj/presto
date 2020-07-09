@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.js"></script>
+    <script src="../../scripts/login.js"></script>
+
+    <style>
+        .card__main:after {
+            width: 0px;
+        }
+
+
+        @media only screen and (min-width: 65.625em) {
+            .main__cards {
+                column-count: 1;
+            }
+
+
+        }
+
+
+        .card__detail:hover {
+            background-color: #f0f0f0;
+            transform: translateX(0px);
+            cursor: pointer;
+        }
+    </style>
+
+    <title>Reservation List</title>
+</head>
+
+<body>
+    <div class="grid">
+        <header class="header">
+            <i class="fas fa-bars header__menu"></i>
+            <div class="header__search">
+
+            </div>
+
+            <div class="header__avatar">
+                <div class="dropdown">
+                    <ul class="dropdown__list">
+                        <li class="dropdown__list-item">
+                            <span class="dropdown__icon"><i class="far fa-user"></i></span>
+                            <span class="dropdown__title">my profile</span>
+                        </li>
+
+                        <li class="dropdown__list-item">
+                            <span class="dropdown__icon"><i class="fas fa-sign-out-alt"></i></span>
+                            <span class="dropdown__title">log out</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <aside class="sidenav">
+            <div class="sidenav__brand">
+                <i class="fas fa-feather-alt sidenav__brand-icon"></i>
+                <a class="sidenav__brand-link" href="#">Presto</a>
+                <i class="fas fa-times sidenav__brand-close"></i>
+            </div>
+            <div class="sidenav__profile">
+                <div class="sidenav__profile-avatar"></div>
+                <div class="sidenav__profile-title text-light">Sahaj Dave</div>
+            </div>
+            <div class="row row--align-v-center row--align-h-center">
+                <ul class="navList">
+                    <li class="navList__heading">Dashboard<i class="far fa-file-alt"></i></li>
+                    <li>
+                        <div class="navList__subheading row row--align-v-center">
+                            <span class="navList__subheading-icon"><i class="fas fa-envelope"></i></span>
+                            <span class="navList__subheading-title">Reservations</span>
+                        </div>
+                        <ul class="subList subList--hidden">
+                            <li class="subList__item">Schedule</li>
+                            <li class="subList__item">Reservations List</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="navList__subheading row row--align-v-center">
+                            <span class="navList__subheading-icon"><i class="fas fa-eye"></i></span>
+                            <span class="navList__subheading-title">Restaurant</span>
+                        </div>
+                        <ul class="subList subList--hidden">
+                            <li class="subList__item">Working Time</li>
+                            <li class="subList__item">Seat Map</li>
+                        </ul>
+                    </li>
+
+                    <li class="navList__heading">Settings<i class="far fa-image"></i></li>
+                    <li>
+                        <div class="navList__subheading row row--align-v-center">
+                            <span class="navList__subheading-icon"><i class="fas fa-mountain"></i></span>
+                            <span class="navList__subheading-title">Main Settings</span>
+                        </div>
+                        <ul class="subList subList--hidden">
+                            <li class="subList__item">Reservation Options</li>
+                            <li class="subList__item">Payments</li>
+                            <li class="subList__item">Reservation Form</li>
+                            <li class="subList__item">Remainders</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="navList__subheading row row--align-v-center">
+                            <span class="navList__subheading-icon"><i class="fas fa-wine-glass-alt"></i></span>
+                            <span class="navList__subheading-title">Other Settings</span>
+                        </div>
+                        <ul class="subList subList--hidden">
+
+                            <li class="subList__item">Terms and Conditions</li>
+                            <li class="subList__item">Notifications</li>
+                        </ul>
+                    </li>
+
+                    <li class="navList__heading">System<i class="fas fa-chart-bar"></i></li>
+                    <li>
+                        <div class="navList__subheading row row--align-v-center">
+                            <span class="navList__subheading-icon"><i class="fas fa-credit-card"></i></span>
+                            <span class="navList__subheading-title">General</span>
+                        </div>
+                        <ul class="subList subList--hidden">
+                            <li class="subList__item">System Options</li>
+                            <!--general-->
+                            <li class="subList__item">Email Settings</li>
+                            <li class="subList__item">SMS Settings</li>
+                            <li class="subList__item">Login and protection</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="navList__subheading row row--align-v-center">
+                            <span class="navList__subheading-icon"><i class="fas fa-phone"></i></span>
+                            <span class="navList__subheading-title">Miscellaneous</span>
+                        </div>
+                        <ul class="subList subList--hidden">
+                            <li class="subList__item">Languages</li>
+                            <li class="subList__item">Cpatcha & Spam</li>
+                        </ul>
+                    </li>
+
+
+                    <li class="navList__heading">Other<i class="fas fa-calendar-alt"></i></li>
+                    <li>
+                        <div class="navList__subheading row row--align-v-center">
+                            <span class="navList__subheading-icon"><i class="fas fa-wine-glass-alt"></i></span>
+                            <span class="navList__subheading-title">Other</span>
+                        </div>
+                        <ul class="subList subList--hidden">
+                            <li class="subList__item">Users</li>
+                            <li class="subList__item">Vouchers</li>
+                        </ul>
+                    </li>
+
+
+                </ul>
+            </div>
+        </aside>
+
+        <main class="main">
+            <div class="main-header">
+                <div class="main-header__intro-wrapper">
+                    <div class="main-header__welcome">
+                        <div class="main-header__welcome-title text-light"><strong>Reservations list</strong></div>
+                        <div class="main-header__welcome-subtitle text-light">Below you can see all the reservations and
+                            enquiries made. Click on any of them to view and edit it. Using the buttons you can filter
+                            the reservation by their status. Use the advance search to quickly locate a reservation.
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="main__cards">
+                <div class="card">
+
+                    <div class="card__main">
+                        <div class="card__row">
+                            <div class="card__detail">
+                                <div class="card__source text-bold"
+                                    style="
+                                    justify-content: space-between;display: flex; flex-direction: row;">
+
+                                    Add Reservation
+
+
+
+                                    <input type="text">
+
+                                    <select name="cars" autocomplete="off">
+                                        <option value="all" selected>All</option>
+                                        <option value="confirmed">Confirmed</option>
+                                        <option value="cancelled">Cancelled</option>
+                                        <option value="enquiry">Enquiry</option>
+                                        <option value="pending">Pending</option>
+                                    </select>
+
+
+
+                                </div>
+                                <div class="card__description"> <strong>Time:</strong> 9:45 PM</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div> <!-- /.main-cards -->
+        </main>
+
+        <footer class="footer">
+            <p><span class="footer__copyright">&copy;</span> 2020 Presto Project</p>
+            <p>Crafted<i class="fas fa-heart footer__icon"></i> by <a href="https://www.linkedin.com/in/sahajdave/"
+                    target="_blank" class="footer__signature">Dave</a></p>
+        </footer>
+    </div>
+</body>
+
+</html>

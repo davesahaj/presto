@@ -336,7 +336,14 @@ a {
   height: 250px;
   color: #fff;
   background-size: cover;
-  background-image: url("https://coverfiles.alphacoders.com/101/101341.jpg");
+
+  background-image:
+        /* top, transparent black, faked with gradient */ linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    /* bottom, image */ url("https://coverfiles.alphacoders.com/101/101341.jpg");
+
   margin-bottom: 20px;
 }
 .main-header__intro-wrapper {
