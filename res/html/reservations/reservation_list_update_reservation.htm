@@ -12,19 +12,33 @@
         width: 0px;
       }
 
-      @media only screen and (min-width: 65.625em) {
-        .main__cards {
-          column-count: 1;
-        }
-      }
-
       .card__detail:hover {
         background-color: #fff;
-        transform: translateX(0px);
+        transform: translateX(0);
         cursor: default;
       }
 
-      
+      .card__detail {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+
+        align-items: top;
+        justify-content: space-between;
+      }
+
+      .card__button {
+        padding: 0.35em 1.2em;
+        border: 0.1em solid #2c1c1c;
+        margin: 0 0.3em 0.3em 0;
+        border-radius: 0.12em;
+        box-sizing: border-box;
+        text-decoration: none;
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        color: #2c1c1c;
+        text-align: center;
+        transition: all 0.2s;
+      }
     </style>
 
     <title>Reservation List</title>
@@ -180,80 +194,204 @@
           <div class="main-header__intro-wrapper">
             <div class="main-header__welcome">
               <div class="main-header__welcome-title text-light">
-                <strong>Reservations list</strong>
+                <strong>Update reservation</strong>
               </div>
               <div class="main-header__welcome-subtitle text-light">
-                Below you can see all the reservations and enquiries made. Click
-                on any of them to view and edit it. Using the buttons you can
-                filter the reservation by their status. Use the advance search
-                to quickly locate a reservation.
+                Update reservation details
               </div>
             </div>
           </div>
         </div>
 
         <div class="main__cards">
+          <!--reservation details-->
           <div class="card">
             <div class="card__main">
               <div class="card__row">
                 <div class="card__detail">
-                  <div class="card__source text-bold"></div>
+                  <div class="card__source text-bold">Reservation Details</div>
 
-                  <div
-                    class="card__description"
-                    style="
-                      justify-content: space-between;
-                      display: flex;
-                      flex-direction: row;
-                    "
-                  >
-                    Add Reservation
-                    <input type="text" />
-                    <select name="cars" autocomplete="off">
-                      <option value="all" selected>All</option>
-                      <option value="confirmed">Confirmed</option>
-                      <option value="cancelled">Cancelled</option>
-                      <option value="enquiry">Enquiry</option>
-                      <option value="pending">Pending</option>
-                    </select>
+                  <div class="card__description">
+                    <div class="card__note">
+                      <div><strong>From Date/Time</strong></div>
+                      <div>
+                        input-calendar
+                      </div>
+                    </div>
+                    <div class="card__note">
+                      <div><strong>To Date/Time</strong></div>
+                      <div>
+                        input-calendar
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
               <div class="card__row">
-                <div class="card__detail" style="overflow-x: auto;">
+                <div class="card__detail">
                   <div class="card__source text-bold"></div>
+
                   <div class="card__description">
-                    <table style="border-collapse: collapse; width: 100%;">
-                      <tr>
-                        <th>Date/Time</th>
-                        <th>People</th>
-                        <th>Table</th>
-                        <th>Name</th>
-                        <th>Email</th>
-                        <th>Status</th>
-                        <th></th>
-                      </tr>
-                      <tr>
-                        <td>09.07.2020, 15:00</td>
-                        <td>4</td>
-                        <td>2</td>
-                        <td>Manav Joshi</td>
-                        <td>manavjoshi97@gmail.com</td>
-                        <td>Confirmed</td>
-                        <td>edit/delete</td>
-                      </tr>
-                      <tr>
-                        <td>09.07.2020, 10:00</td>
-                        <td>6</td>
-                        <td>12</td>
-                        <td>Shinu Dave</td>
-                        <td>ShinuDave123@gmail.com</td>
-                        <td>Confirmed</td>
-                        <td>edit/delete</td>
-                      </tr>
-                    </table>
+                    <div class="card__note">
+                      <div><strong>Unique ID</strong></div>
+                      <div>
+                        input
+                      </div>
+                    </div>
+                    <div class="card__note">
+                      <div><strong>Status</strong></div>
+                      <div>
+                        dropdown
+                      </div>
+                    </div>
+                    <div class="card__note">
+                      <div><strong>Deposit Fee</strong></div>
+                      <div>
+                        input
+                      </div>
+                    </div>
+                    <div class="card__note">
+                      <div><strong>Voucher Code</strong></div>
+                      <div>
+                        input
+                      </div>
+                    </div>
                   </div>
                 </div>
+              </div>
+              <div class="card__row">
+                <div class="card__detail">
+                  <div class="card__source text-bold"></div>
+
+                  <div class="card__description">
+                    <div class="card__note">
+                      <div><strong>Payment Method</strong></div>
+                      <div>
+                        Dropdown
+                      </div>
+                    </div>
+                    <div class="card__note">
+                      <div><strong>Deposit Paid</strong></div>
+                      <div>
+                        checkbox
+                      </div>
+                    </div>
+                    <div class="card__note">
+                      <div><strong>People</strong></div>
+                      <div>4</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__row">
+                <div class="card__detail">
+                  <div class="card__source text-bold"></div>
+
+                  <div class="card__description">
+                    <div class="card__note">
+                      <div><strong>Table Name</strong></div>
+                      <div>
+                        Dropdown
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--client details-->
+          <div class="card">
+            <div class="card__main">
+              <div class="card__row">
+                <div class="card__detail">
+                  <div class="card__source text-bold">Client Details</div>
+                  <div class="card__description">
+                    <div class="card__note">
+                      <div><strong>Title</strong></div>
+                      <div>
+                        Dropdown
+                      </div>
+                    </div>
+                    <div class="card__note">
+                      <div><strong>First Name</strong></div>
+                      <div>
+                        input
+                      </div>
+                    </div>
+                    <div class="card__note">
+                      <div><strong>Last Name</strong></div>
+                      <div>
+                        input
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__row">
+                <div class="card__detail">
+                  <div class="card__source text-bold"></div>
+
+                  <div class="card__description">
+                    <div class="card__note">
+                      <div><strong>Email</strong></div>
+                      <div>
+                        input
+                      </div>
+                    </div>
+                    <div class="card__note">
+                      <div><strong>Phone</strong></div>
+                      <div>
+                        input
+                      </div>
+                    </div>
+                    <div class="card__note">
+                      <div><strong>Company name</strong></div>
+                      <div>
+                        input
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__row">
+                <div class="card__detail">
+                  <div class="card__source text-bold"></div>
+
+                  <div class="card__description">
+                    <div class="card__note">
+                      <div><strong>Address</strong></div>
+                      <div>
+                        input
+                      </div>
+                    </div>
+                    <div class="card__note">
+                      <div><strong>City</strong></div>
+                      <div>
+                        input
+                      </div>
+                    </div>
+                    <div class="card__note">
+                      <div><strong>Pin Code</strong></div>
+                      <div>
+                        input
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--save cancel buttons-->
+          <div class="card">
+            <div class="card__main">
+              <div
+                class="card__row"
+                style="display: flex; justify-content: space-evenly;"
+              >
+                <button class="card__button">Save</button>
+                <button class="card__button">Cancel</button>
               </div>
             </div>
           </div>
