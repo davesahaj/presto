@@ -515,6 +515,34 @@ a {
 .card__photo-wrapper {
   overflow: hidden;
 }
+.card__button {
+  padding: 0.35em 1.2em;
+  border: none;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: large;
+  text-align: center;
+  transition: all 0.2s;
+  background-color: #394263;
+  color: white;
+  display: inline-block;
+  cursor: pointer;
+}
+.card__button:hover {
+  background-color: #191e2e;
+}
+
+.card__checkbox{
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+}
 .card__row {
   position: relative;
   display: flex;
