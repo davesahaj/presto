@@ -18,14 +18,7 @@
         cursor: default;
       }
 
-      .card__detail {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-
-        align-items: top;
-        justify-content: space-between;
-      }
-
+     
       .card__button {
         padding: 0.35em 1.2em;
         border: 0.1em solid #2c1c1c;
@@ -38,6 +31,21 @@
         color: #2c1c1c;
         text-align: center;
         transition: all 0.2s;
+      }
+      .card__detail {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+
+        align-items: top;
+        justify-content: space-between;
+      }
+
+      .card__description {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+
+        align-items: top;
+        justify-content: space-between;
       }
     </style>
 
@@ -206,11 +214,14 @@
         <div class="main__cards">
           <!--reservation details-->
           <div class="card">
+            <div class="card__header">
+              <div class="card__header-title text-light">
+                <strong>Reservation Details</strong>
+              </div>
+            </div>
             <div class="card__main">
               <div class="card__row">
                 <div class="card__detail">
-                  <div class="card__source text-bold">Reservation Details</div>
-
                   <div class="card__description">
                     <div class="card__note">
                       <div><strong>From Date/Time</strong></div>
@@ -229,7 +240,6 @@
               </div>
               <div class="card__row">
                 <div class="card__detail">
-                  <div class="card__source text-bold"></div>
 
                   <div class="card__description">
                     <div class="card__note">
@@ -261,7 +271,6 @@
               </div>
               <div class="card__row">
                 <div class="card__detail">
-                  <div class="card__source text-bold"></div>
 
                   <div class="card__description">
                     <div class="card__note">
@@ -285,7 +294,6 @@
               </div>
               <div class="card__row">
                 <div class="card__detail">
-                  <div class="card__source text-bold"></div>
 
                   <div class="card__description">
                     <div class="card__note">
@@ -302,10 +310,14 @@
 
           <!--client details-->
           <div class="card">
+            <div class="card__header">
+              <div class="card__header-title text-light">
+                <strong> Client Details</strong>
+              </div>
+            </div>
             <div class="card__main">
               <div class="card__row">
                 <div class="card__detail">
-                  <div class="card__source text-bold">Client Details</div>
                   <div class="card__description">
                     <div class="card__note">
                       <div><strong>Title</strong></div>
@@ -330,7 +342,6 @@
               </div>
               <div class="card__row">
                 <div class="card__detail">
-                  <div class="card__source text-bold"></div>
 
                   <div class="card__description">
                     <div class="card__note">
@@ -356,7 +367,6 @@
               </div>
               <div class="card__row">
                 <div class="card__detail">
-                  <div class="card__source text-bold"></div>
 
                   <div class="card__description">
                     <div class="card__note">
