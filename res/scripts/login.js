@@ -1,7 +1,12 @@
+const sidenavmenu = document.getElementsByClassName("sidenav");
+const gridmenu = document.getElementsByClassName("grid");
+
 /* Scripts for css grid dashboard */
 function afterPageLoad(){
   setSidenavListeners();
   setUserDropdownListener();
+  setMenuClickListener();
+  setSidenavCloseListener();
 }
 
 // User avatar dropdown functionality
@@ -63,6 +68,24 @@ function setSidenavListeners() {
     });
   });
 }*/
+
+function setMenuClickListener() {
+  const menubtn = document.getElementsByClassName("header__menu");
+
+  menubtn[0].addEventListener("click", function() {
+    sidenavmenu[0].classList.toggle("sidenav--active");
+    gridmenu[0].classList.toggle("grid--noscroll");
+  });
+}
+
+function setSidenavCloseListener() {
+  const sidenavClose = document.getElementsByClassName("sidenav__brand-close");
+
+  sidenavClose[0].addEventListener("click", function() {
+    sidenavmenu[0].classList.toggle("sidenav--active");
+    gridmenu[0].classList.toggle("grid--noscroll");
+  });
+}
 
 /*$(document).ready(() => {
   addResizeListeners();
