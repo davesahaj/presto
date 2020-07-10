@@ -305,6 +305,12 @@ a {
   padding: 8px 30px;
   color: #d3d3d3;
 }
+.navList .subList__item a {
+  padding: 8px;
+  text-transform: capitalize;
+  padding: 8px 30px;
+  color: #d3d3d3;
+}
 .navList .subList__item:first-child {
   padding-top: 15px;
 }
@@ -536,7 +542,7 @@ a {
   background-color: #191e2e;
 }
 
-.card__checkbox{
+.card__checkbox {
   top: 0;
   left: 0;
   height: 20px;
@@ -742,3 +748,35 @@ a {
     align-items: flex-start;
   }
 }
+
+.mytable,
+td,
+th {
+  border-bottom: 0.5px solid black;
+  text-align: left;
+  padding: 10px;
+}
+
+.mytable {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
+
+.mytable_right {
+  text-align: right;
+}
+
+select {
+  width: 190px;
+}
+input {
+  width: 170px;
+}
+
+
+:focus {outline:none;}
+::-moz-focus-inner {border:0;}
