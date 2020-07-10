@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.js"></script>
+    <script src="../../scripts/login.js"></script>
+
+    <style>
+      @media only screen and (min-width: 65.625em) {
+        .main__cards {
+          column-count: 1;
+        }
+      }
+      .card__main:after {
+        width: 0px;
+      }
+
+      .card__detail:hover {
+        background-color: #fff;
+        transform: translateX(0);
+        cursor: default;
+      }
+
+      .card__description {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        column-count: 1;
+        align-items: top;
+        justify-content: space-between;
+      }
+
+      .card__button {
+        padding: 0.35em 1.2em;
+        border: 0.1em solid #2c1c1c;
+        margin: 0 0.3em 0.3em 0;
+        border-radius: 0.12em;
+        box-sizing: border-box;
+        text-decoration: none;
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        color: #2c1c1c;
+        text-align: center;
+        transition: all 0.2s;
+      }
+    </style>
+
+    <title>
+      System Options
+    </title>
+  </head>
+
+  <body onload="afterPageLoad()">
+    <div class="grid">
+      <header class="header">
+        <i class="fas fa-bars header__menu"></i>
+        <div class="header__search"></div>
+
+        <div class="header__avatar">
+          <div class="dropdown">
+            <ul class="dropdown__list">
+              <li class="dropdown__list-item">
+                <span class="dropdown__icon"><i class="far fa-user"></i></span>
+                <span class="dropdown__title">my profile</span>
+              </li>
+
+              <li class="dropdown__list-item">
+                <span class="dropdown__icon"
+                  ><i class="fas fa-sign-out-alt"></i
+                ></span>
+                <span class="dropdown__title">log out</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <aside class="sidenav">
+        <div class="sidenav__brand">
+          <i class="fas fa-feather-alt sidenav__brand-icon"></i>
+          <a class="sidenav__brand-link" href="#">Presto</a>
+          <i class="fas fa-times sidenav__brand-close"></i>
+        </div>
+        <div class="sidenav__profile">
+          <div class="sidenav__profile-avatar"></div>
+          <div class="sidenav__profile-title text-light">Sahaj Dave</div>
+        </div>
+        <div class="row row--align-v-center row--align-h-center">
+          <ul class="navList">
+            <li class="navList__heading">
+              Dashboard<i class="far fa-file-alt"></i>
+            </li>
+            <li>
+              <div class="navList__subheading row row--align-v-center">
+                <span class="navList__subheading-icon"
+                  ><i class="fas fa-envelope"></i
+                ></span>
+                <span class="navList__subheading-title">Reservations</span>
+              </div>
+              <ul class="subList subList--hidden">
+                <li class="subList__item">Schedule</li>
+                <li class="subList__item">Reservations List</li>
+              </ul>
+            </li>
+            <li>
+              <div class="navList__subheading row row--align-v-center">
+                <span class="navList__subheading-icon"
+                  ><i class="fas fa-eye"></i
+                ></span>
+                <span class="navList__subheading-title">Restaurant</span>
+              </div>
+              <ul class="subList subList--hidden">
+                <li class="subList__item">Working Time</li>
+                <li class="subList__item">Seat Map</li>
+              </ul>
+            </li>
+
+            <li class="navList__heading">
+              Settings<i class="far fa-image"></i>
+            </li>
+            <li>
+              <div class="navList__subheading row row--align-v-center">
+                <span class="navList__subheading-icon"
+                  ><i class="fas fa-mountain"></i
+                ></span>
+                <span class="navList__subheading-title">Main Settings</span>
+              </div>
+              <ul class="subList subList--hidden">
+                <li class="subList__item">Reservation Options</li>
+                <li class="subList__item">Payments</li>
+                <li class="subList__item">Reservation Form</li>
+                <li class="subList__item">Remainders</li>
+              </ul>
+            </li>
+            <li>
+              <div class="navList__subheading row row--align-v-center">
+                <span class="navList__subheading-icon"
+                  ><i class="fas fa-wine-glass-alt"></i
+                ></span>
+                <span class="navList__subheading-title">Other Settings</span>
+              </div>
+              <ul class="subList subList--hidden">
+                <li class="subList__item">Terms and Conditions</li>
+                <li class="subList__item">Notifications</li>
+              </ul>
+            </li>
+
+            <li class="navList__heading">
+              System<i class="fas fa-chart-bar"></i>
+            </li>
+            <li>
+              <div class="navList__subheading row row--align-v-center">
+                <span class="navList__subheading-icon"
+                  ><i class="fas fa-credit-card"></i
+                ></span>
+                <span class="navList__subheading-title">General</span>
+              </div>
+              <ul class="subList subList--hidden">
+                <li class="subList__item">System Options</li>
+                <!--general-->
+                <li class="subList__item">Email Settings</li>
+                <li class="subList__item">SMS Settings</li>
+                <li class="subList__item">Login and protection</li>
+              </ul>
+            </li>
+            <li>
+              <div class="navList__subheading row row--align-v-center">
+                <span class="navList__subheading-icon"
+                  ><i class="fas fa-phone"></i
+                ></span>
+                <span class="navList__subheading-title">Miscellaneous</span>
+              </div>
+              <ul class="subList subList--hidden">
+                <li class="subList__item">Languages</li>
+                <li class="subList__item">Cpatcha & Spam</li>
+              </ul>
+            </li>
+
+            <li class="navList__heading">
+              Other<i class="fas fa-calendar-alt"></i>
+            </li>
+            <li>
+              <div class="navList__subheading row row--align-v-center">
+                <span class="navList__subheading-icon"
+                  ><i class="fas fa-wine-glass-alt"></i
+                ></span>
+                <span class="navList__subheading-title">Other</span>
+              </div>
+              <ul class="subList subList--hidden">
+                <li class="subList__item">Users</li>
+                <li class="subList__item">Vouchers</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <main class="main">
+        <div class="main-header">
+          <div class="main-header__intro-wrapper">
+            <div class="main-header__welcome">
+              <div class="main-header__welcome-title text-light">
+                <strong>
+                  General Options
+                </strong>
+              </div>
+              <div class="main-header__welcome-subtitle text-light">
+                Here you can set the General Options for the system.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="main__cards">
+          <!--Working Time-->
+          <div class="card">
+            <div class="card__main">
+              <div class="card__row">
+                <div class="card__detail">
+                  <div class="card__description">
+                    <div class="card__note">
+                      <div><strong>Date Format</strong></div>
+                    </div>
+                    <div class="card__note">
+                      <div>input</div>
+                    </div>
+                  </div>
+                  <div class="card__description">
+                    <div class="card__note">
+                      <div><strong>Time Format</strong></div>
+                    </div>
+                    <div class="card__note">
+                      <div>input</div>
+                    </div>
+                  </div>
+                  <div class="card__description">
+                    <div class="card__note">
+                      <div><strong>Time Zone</strong></div>
+                    </div>
+                    <div class="card__note">
+                      <div>input</div>
+                    </div>
+                  </div>
+                  <div class="card__description">
+                    <div class="card__note">
+                      <div><strong>First Day of the Week</strong></div>
+                    </div>
+                    <div class="card__note">
+                      <div>input</div>
+                    </div>
+                  </div>
+                  <div class="card__description">
+                    <div class="card__note">
+                      <div><strong>Currency</strong></div>
+                    </div>
+                    <div class="card__note">
+                      <div>input</div>
+                    </div>
+                  </div>
+                  <div class="card__description">
+                    <div class="card__note">
+                      <div><strong>Price Format</strong></div>
+                    </div>
+                    <div class="card__note">
+                      <div>input</div>
+                    </div>
+                  </div>
+                  <div class="card__description">
+                    <div class="card__note">
+                      <div><strong>Currency Symbol Place</strong></div>
+                    </div>
+                    <div class="card__note">
+                      <div>input</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--save cancel buttons-->
+          <div class="card">
+            <div class="card__main">
+              <div
+                class="card__row"
+                style="display: flex; justify-content: space-evenly;"
+              >
+                <button class="card__button">Save</button>
+                <button class="card__button">Cancel</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- /.main-cards -->
+      </main>
+
+      <footer class="footer">
+        <p><span class="footer__copyright">&copy;</span> 2020 Presto Project</p>
+        <p>
+          Crafted<i class="fas fa-heart footer__icon"></i> by
+          <a
+            href="https://www.linkedin.com/in/sahajdave/"
+            target="_blank"
+            class="footer__signature"
+            >Dave</a
+          >
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
