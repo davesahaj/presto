@@ -6,6 +6,23 @@ body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+@media only screen and (max-width: 600px) {
+  .card__note {
+    font-size: 12px;
+  }
+  .card__source {
+    font-size: 12px;
+  }
+  .sb_1 {
+      width: 100px;
+      font-size: 8px;
+  }
+
+  input {
+  width: 100px;
+}
+}
+
 a {
   text-decoration: none;
 }
