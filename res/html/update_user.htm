@@ -8,24 +8,31 @@
     <script src="../scripts/login.js"></script>
 
     <style>
-      .card__main:after {
-        width: 0px;
-      }
-
       @media only screen and (min-width: 65.625em) {
         .main__cards {
           column-count: 1;
         }
       }
+      .card__main:after {
+        width: 0px;
+      }
 
       .card__detail:hover {
         background-color: #fff;
-        transform: translateX(0px);
+        transform: translateX(0);
         cursor: default;
+      }
+
+      .card__description {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        column-count: 1;
+        align-items: top;
+        justify-content: space-between;
       }
     </style>
 
-    <title>Users</title>
+    <title>Update User</title>
   </head>
 
   <body onload="afterPageLoad()">
@@ -221,93 +228,154 @@
           <div class="main-header__intro-wrapper">
             <div class="main-header__welcome">
               <div class="main-header__welcome-title text-light">
-                <strong>Users</strong>
+                <strong>
+                  Update User
+                </strong>
               </div>
               <div class="main-header__welcome-subtitle text-light">
-                Add and manage system users. Set users as 'Inactive' if you wish
-                to temporarily restrict their access to the system without
-                deleting them. Click on permissions icon to configure user
-                permission levels.
+                Review and update User's data.
               </div>
             </div>
           </div>
         </div>
 
         <div class="main__cards">
+          <!--Working Time-->
           <div class="card">
             <div class="card__main">
               <div class="card__row">
                 <div class="card__detail">
-                  <div class="card__source text-bold"></div>
+                  <div class="card__source text-bold">Update User</div>
 
-                  <div
-                    class="card__description"
-                    style="
-                      justify-content: space-between;
-                      display: flex;
-                      flex-direction: row;
-                    "
-                  >
-                    <button class="card__button">Add Reservation</button>
-
-                    <select name="cars" autocomplete="off">
-                      <option value="all" selected>All</option>
-                      <option value="confirmed">Active</option>
-                      <option value="cancelled">Inactive</option>
-                    </select>
+                  <div class="card__description">
+                    <div class="card__note">
+                      <div><strong> Registration date/time </strong></div>
+                    </div>
+                    <div class="card__note">
+                      <div><strong> IP address </strong></div>
+                    </div>
+                    <div class="card__note">
+                      <div><strong> Last login </strong></div>
+                    </div>
+                  </div>
+                  <div class="card__description">
+                    <div class="card__note">
+                      <div>
+                        17.12.2019, 15:03
+                      </div>
+                    </div>
+                    <div class="card__note">
+                      <div>
+                        84.54.187.68
+                      </div>
+                    </div>
+                    <div class="card__note">
+                      <div>
+                        11.07.2020, 03:07
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__main">
               <div class="card__row">
-                <div class="card__detail" style="overflow-x: auto;">
-                  <div class="card__source text-bold"></div>
+                <div class="card__detail">
                   <div class="card__description">
-                    <table class="mytable">
-                      <tr>
-                        <th>
-                          <input type="checkbox" class="card__checkbox" />
-                        </th>
-                        <th>Name</th>
-                        <th>Email</th>
-                        <th>Last Login</th>
-                        <th>Role</th>
-                        <th>Status</th>
-                        <th>Account Locked</th>
-                        <th></th>
-                      </tr>
-                      <tr>
-                        <td>
-                          <input type="checkbox" class="card__checkbox" />
-                        </td>
-                        <td>Administrator</td>
-                        <td>admin@admin.com</td>
-                        <td>11.07.2020</td>
-                        <td>Administrator</td>
-                        <td>
-                          <input
-                            type="checkbox"
-                            class="card__checkbox"
-                            name=""
-                            id=""
-                            checked
-                          />
-                        </td>
-                        <td>
-                          <input
-                            type="checkbox"
-                            class="card__checkbox"
-                            name=""
-                            id=""
-                          />
-                        </td>
-                        <td class="mytable_right">
-                          <input type="button" class="card__button" onclick="location.href='update_user.htm';" value="Edit" />
-                        </td>
-                      </tr>
-                     
-                    </table>
+                    <div class="card__note">
+                      <div><strong> Status </strong></div>
+                    </div>
+                    <div class="card__note">
+                      <div><strong> Role</strong></div>
+                    </div>
+                  </div>
+                  <div class="card__description">
+                    <div class="card__note">
+                      <div>
+                        <input
+                          type="checkbox"
+                          name=""
+                          id=""
+                          class="card__checkbox"
+                          checked
+                        />
+                      </div>
+                    </div>
+                    <div class="card__note">
+                      <div>
+                        <select name="" id="">
+                          <option value="" selected>--Choose--</option>
+                          <option value="">Administrator</option>
+                          <option value="">Regular User</option>
+                        </select>
+                      </div>
+                    </div>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__main">
+              <div class="card__row">
+                <div class="card__detail">
+                  <div class="card__description">
+                    <div class="card__note">
+                      <div><strong> Email </strong></div>
+                    </div>
+                    <div class="card__note">
+                      <div><strong> New password </strong></div>
+                    </div>
+                    <div class="card__note">
+                      <div>
+                        <strong>
+                          Name
+                        </strong>
+                      </div>
+                    </div>
+                    <div class="card__note">
+                      <div><strong> Phone </strong></div>
+                    </div>
+                  </div>
+                  <div class="card__description">
+                    <div class="card__note">
+                      <div>
+                        <input type="email" name="" id="" />
+                      </div>
+                    </div>
+                    <div class="card__note">
+                      <div>
+                        <input type="password" name="" id="" />
+                      </div>
+                    </div>
+                    <div class="card__note">
+                      <div>
+                        <input type="text" name="" id="" />
+                      </div>
+                    </div>
+                    <div class="card__note">
+                      <div>
+                        <input type="tel" name="" id="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--save cancel buttons-->
+          <div class="card">
+            <div class="card__main">
+              <div
+                class="card__row"
+                style="display: flex; justify-content: space-evenly;"
+              >
+                <button class="card__button">Save</button>
+                <button class="card__button">Cancel</button>
               </div>
             </div>
           </div>

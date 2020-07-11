@@ -158,8 +158,8 @@ a {
   overflow-y: auto;
   background-color: #394263;
   color: #fff;
-  width: 240px;
-  transform: translateX(-245px);
+  width: 280px;
+  transform: translateX(-285px);
   transition: all 0.6s ease-in-out;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
   z-index: 2;
@@ -233,7 +233,7 @@ a {
 }
 
 .navList {
-  width: 240px;
+  width: 280px;
   padding: 0;
   margin: 0;
   background-color: #394263;
@@ -710,7 +710,7 @@ a {
 @media only screen and (min-width: 46.875em) {
   .grid {
     display: grid;
-    grid-template-columns: 240px calc(100% - 240px);
+    grid-template-columns: 280px calc(100% - 280px);
     grid-template-rows: 50px 1fr 50px;
     grid-template-areas: "sidenav header" "sidenav main" "sidenav footer";
     height: 100vh;
