@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.js"></script>
+    <script src="../../scripts/login.js"></script>
+
+    <style>
+      @media only screen and (min-width: 65.625em) {
+        .main__cards {
+          column-count: 1;
+        }
+      }
+      .card__main:after {
+        width: 0px;
+      }
+
+      .card__detail:hover {
+        background-color: #fff;
+        transform: translateX(0);
+        cursor: default;
+      }
+
+      .card__description {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        column-count: 1;
+        align-items: top;
+        justify-content: space-between;
+      }
+    </style>
+
+    <title>Email Settings</title>
+  </head>
+
+  <body onload="afterPageLoad()">
+    <div class="grid">
+      <header class="header">
+        <i class="fas fa-bars header__menu"></i>
+        <div class="header__search"></div>
+
+        <div class="header__avatar">
+          <div class="dropdown">
+            <ul class="dropdown__list">
+              <li class="dropdown__list-item">
+                <span class="dropdown__icon"><i class="far fa-user"></i></span>
+                <span class="dropdown__title">my profile</span>
+              </li>
+
+              <li class="dropdown__list-item">
+                <span class="dropdown__icon"
+                  ><i class="fas fa-sign-out-alt"></i
+                ></span>
+                <span class="dropdown__title">log out</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+     <aside class="sidenav">
+        <div class="sidenav__brand">
+          <i class="fas fa-feather-alt sidenav__brand-icon"></i>
+                    <a class="sidenav__brand-link" href="../dashboard.htm">Presto</a>
+          <i class="fas fa-times sidenav__brand-close"></i>
+        </div>
+        <div class="sidenav__profile">
+          <div class="sidenav__profile-avatar"></div>
+          <div class="sidenav__profile-title text-light">Sahaj Dave</div>
+        </div>
+        <div class="row row--align-v-center row--align-h-center">
+          <ul class="navList">
+            <li class="navList__heading">
+              Dashboard<i class="far fa-file-alt"></i>
+            </li>
+            <li>
+              <div class="navList__subheading row row--align-v-center">
+                <span class="navList__subheading-icon"
+                  ><i class="fas fa-envelope"></i
+                ></span>
+                <span class="navList__subheading-title">Reservations</span>
+              </div>
+              <ul class="subList subList--hidden">
+                <li class="subList__item">
+                  <a href="../../html/reservations/schedule.htm">Schedule</a>
+                </li>
+                <li class="subList__item">
+                  <a href="../../html/reservations/reservation_list.htm"
+                    >Booking List</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <div class="navList__subheading row row--align-v-center">
+                <span class="navList__subheading-icon"
+                  ><i class="fas fa-eye"></i
+                ></span>
+                <span class="navList__subheading-title">Restaurant</span>
+              </div>
+              <ul class="subList subList--hidden">
+                <li class="subList__item">
+                  <a href="../../html/restaurant/working_hours.htm"
+                    >Working Time</a
+                  >
+                </li>
+                <li class="subList__item">
+                  <a href="../../html/restaurant/seat_map.htm">Seat Map</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="navList__heading">
+              Settings<i class="far fa-image"></i>
+            </li>
+            <li>
+              <div class="navList__subheading row row--align-v-center">
+                <span class="navList__subheading-icon"
+                  ><i class="fas fa-mountain"></i
+                ></span>
+                <span class="navList__subheading-title">Main Settings</span>
+              </div>
+              <ul class="subList subList--hidden">
+                <li class="subList__item">
+                  <a href="../../html/settings/reservation_options.htm"
+                    >Booking Options</a
+                  >
+                </li>
+                <li class="subList__item">
+                  <a href="../../html/settings/payments.htm"> Payments</a>
+                </li>
+                <li class="subList__item">
+                  <a href="../../html/settings/reservation_form.htm">
+                    Booking Form</a
+                  >
+                </li>
+                <li class="subList__item">
+                  <a href="../../html/settings/remainders.htm">Remainders</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <div class="navList__subheading row row--align-v-center">
+                <span class="navList__subheading-icon"
+                  ><i class="fas fa-wine-glass-alt"></i
+                ></span>
+                <span class="navList__subheading-title">Other Settings</span>
+              </div>
+              <ul class="subList subList--hidden">
+                <li class="subList__item">
+                  <a href="../../html/settings/TnC.htm">T&Cs</a>
+                </li>
+                <li class="subList__item">
+                  <a href="../../html/settings/notifications.htm">Notifications</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="navList__heading">
+              System<i class="fas fa-chart-bar"></i>
+            </li>
+            <li>
+              <div class="navList__subheading row row--align-v-center">
+                <span class="navList__subheading-icon"
+                  ><i class="fas fa-credit-card"></i
+                ></span>
+                <span class="navList__subheading-title">General</span>
+              </div>
+              <ul class="subList subList--hidden">
+                <li class="subList__item">
+                  <a href="../../html/system/general.htm">System Options </a>
+                </li>
+                <!--general-->
+                <li class="subList__item">
+                  <a href="../../html/system/email_settings.htm">Email Settings</a>
+                </li>
+                <li class="subList__item">
+                  <a href="../../html/system/sms_settings.htm">SMS Settings</a>
+                </li>
+                <li class="subList__item">
+                  <a href="../../html/system/login_and_security.htm"
+                    >Login and protection</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <div class="navList__subheading row row--align-v-center">
+                <span class="navList__subheading-icon"
+                  ><i class="fas fa-phone"></i
+                ></span>
+                <span class="navList__subheading-title">Miscellaneous</span>
+              </div>
+              <ul class="subList subList--hidden">
+                <li class="subList__item">
+                  <a href="../../html/system/captcha_and_spam.htm"
+                    >Captchas</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="navList__heading">
+              Other<i class="fas fa-calendar-alt"></i>
+            </li>
+            <li>
+              <div class="navList__subheading row row--align-v-center">
+                <span class="navList__subheading-icon"
+                  ><i class="fas fa-wine-glass-alt"></i
+                ></span>
+                <span class="navList__subheading-title">Other</span>
+              </div>
+              <ul class="subList subList--hidden">
+                <li class="subList__item">
+                  <a href="../../html/users.htm">Users</a>
+                </li>
+                <li class="subList__item">
+                  <a href="../../html/vouchers.htm">Vouchers</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <main class="main">
+        <div class="main-header">
+          <div class="main-header__intro-wrapper">
+            <div class="main-header__welcome">
+              <div class="main-header__welcome-title text-light">
+                <strong>
+                  Email Settings
+                </strong>
+              </div>
+              <div class="main-header__welcome-subtitle text-light">
+                Use the form below to define the settings for sending emails.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="main__cards">
+          <!--Working Time-->
+          <div class="card">
+            <div class="card__main">
+              <div class="card__row">
+                <div class="card__detail">
+                  <div class="card__description">
+                    <div class="card__note">
+                      <div><strong>Enable notifications</strong></div>
+                    </div>
+                    <div class="card__note">
+                      <div>
+                        <select class="sb_1">
+                          <option value="Yes">Yes</option>
+                          <option value="No">No</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__description">
+                    <div class="card__note">
+                      <div><strong>Enable SMS notifications</strong></div>
+                    </div>
+                    <div class="card__note">
+                      <div>
+                        <select class="sb_1">
+                          <option value="Yes">Yes</option>
+                          <option value="No">No</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__description">
+                    <div class="card__note">
+                      <div><strong>Send email reminder</strong></div>
+                    </div>
+                    <div class="card__note">
+                      <div>
+                        <input type="text" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__description">
+                    <div class="card__note">
+                      <div><strong>Email Reminder subject</strong></div>
+                    </div>
+                    <div class="card__note">
+                      <div>
+                        <input type="text" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__main">
+              <div class="card__row">
+                <div class="card__detail">
+                  <div class="card__source text-bold">{Title}</div>
+                  <div class="card__description">
+                    <select class="sb_1">
+                      <option value="Yes">Yes</option>
+                      <option value="No">No</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="card__detail">
+                  <div class="card__source text-bold">{FirstName}</div>
+                  <div class="card__description">
+                    <select class="sb_1">
+                      <option value="Yes">Yes</option>
+                      <option value="No">No</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="card__detail">
+                  <div class="card__source text-bold">{LastName}</div>
+                  <div class="card__description">
+                    <select class="sb_1">
+                      <option value="Yes">Yes</option>
+                      <option value="No">No</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="card__row">
+                <div class="card__detail">
+                  <div class="card__source text-bold">{Email}</div>
+                  <div class="card__description">
+                    <select class="sb_1">
+                      <option value="Yes">Yes</option>
+                      <option value="No">No</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="card__detail">
+                  <div class="card__source text-bold">{Phone}</div>
+                  <div class="card__description">
+                    <select class="sb_1">
+                      <option value="Yes">Yes</option>
+                      <option value="No">No</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="card__detail">
+                  <div class="card__source text-bold">{DtFrom}</div>
+                  <div class="card__description">
+                    <select class="sb_1">
+                      <option value="Yes">Yes</option>
+                      <option value="No">No</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="card__row">
+                <div class="card__detail">
+                  <div class="card__source text-bold">{Table}</div>
+                  <div class="card__description">
+                    <select class="sb_1">
+                      <option value="Yes">Yes</option>
+                      <option value="No">No</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="card__detail">
+                  <div class="card__source text-bold">{People}</div>
+                  <div class="card__description">
+                    <select class="sb_1">
+                      <option value="Yes">Yes</option>
+                      <option value="No">No</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="card__detail">
+                  <div class="card__source text-bold">{BookingID}</div>
+                  <div class="card__description">
+                    <select class="sb_1">
+                      <option value="Yes">Yes</option>
+                      <option value="No">No</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="card__row">
+                <div class="card__detail">
+                  <div class="card__source text-bold">{UniqueID}</div>
+                  <div class="card__description">
+                    <select class="sb_1">
+                      <option value="Yes">Yes</option>
+                      <option value="No">No</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="card__detail">
+                  <div class="card__source text-bold">{Total}</div>
+                  <div class="card__description">
+                    <select class="sb_1">
+                      <option value="Yes">Yes</option>
+                      <option value="No">No</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="card__detail">
+                  <div class="card__source text-bold">{PaymentMethod}</div>
+                  <div class="card__description">
+                    <select class="sb_1">
+                      <option value="Yes">Yes</option>
+                      <option value="No">No</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--save cancel buttons-->
+          <div class="card">
+            <div class="card__main">
+              <div
+                class="card__row"
+                style="display: flex; justify-content: space-evenly;"
+              >
+                <button class="card__button">Save</button>
+                <button class="card__button">Cancel</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- /.main-cards -->
+      </main>
+
+      <footer class="footer">
+        <p><span class="footer__copyright">&copy;</span> 2020 Presto Project</p>
+        <p>
+          Crafted<i class="fas fa-heart footer__icon"></i> by
+          <a
+            href="https://www.linkedin.com/in/sahajdave/"
+            target="_blank"
+            class="footer__signature"
+            >Dave</a
+          >
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
