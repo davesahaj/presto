@@ -8,26 +8,31 @@
     <script src="../scripts/login.js"></script>
 
     <style>
-      .card__main:after {
-        width: 0px;
-      }
-
       @media only screen and (min-width: 65.625em) {
         .main__cards {
           column-count: 1;
         }
       }
+      .card__main:after {
+        width: 0px;
+      }
 
       .card__detail:hover {
         background-color: #fff;
-        transform: translateX(0px);
+        transform: translateX(0);
         cursor: default;
       }
 
-
+      .card__description {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        column-count: 1;
+        align-items: top;
+        justify-content: space-between;
+      }
     </style>
 
-    <title>Vouchers</title>
+    <title>User Profile</title>
   </head>
 
   <body onload="afterPageLoad()">
@@ -176,7 +181,7 @@
                 </li>
                 <li class="subList__item">
                   <a href="../html/system/login_and_security.htm"
-                    >Login and protection</a
+                    >Login & Security</a
                   >
                 </li>
               </ul>
@@ -190,9 +195,7 @@
               </div>
               <ul class="subList subList--hidden">
                 <li class="subList__item">
-                  <a href="../html/system/captcha_and_spam.htm"
-                    >Captchas</a
-                  >
+                  <a href="../html/system/captcha_and_spam.htm">Captchas</a>
                 </li>
               </ul>
             </li>
@@ -225,87 +228,133 @@
           <div class="main-header__intro-wrapper">
             <div class="main-header__welcome">
               <div class="main-header__welcome-title text-light">
-                <strong>Voucher List</strong>
+                <strong>
+                  User Profile
+                </strong>
               </div>
               <div class="main-header__welcome-subtitle text-light">
-                Below is the list of vouchers. If you wan to add new voucher,
-                click on the "Add voucher" Tab. To edit or delete a certain voucher,
-                click on corresponding icons on the row.
+                Review and update your profile.
               </div>
             </div>
           </div>
         </div>
 
         <div class="main__cards">
+          <!--Working Time-->
           <div class="card">
             <div class="card__main">
               <div class="card__row">
                 <div class="card__detail">
-                  <div class="card__source text-bold"></div>
+                  <div class="card__source text-bold">Update User</div>
 
-                  <div class="card__description" style=
-                      "justify-content: space-between;
-                      display: flex;
-                      flex-direction: row;">
-                        Add Voucher
-                  <input type="text" />
-
-                  </div>
-                </div>
-              </div>
-              <div class="card__row">
-                <div class="card__detail" style="overflow-x: auto;">
-                  <div class="card__source text-bold"></div>
                   <div class="card__description">
-                    <table class="mytable">
-                      <tr>
-                        <th><label class="container">
-                        <input type="checkbox">
-                        <span class="checkmark"></span>
-                        </label></th>
-                        <th>Voucher code</th>
-                        <th>Discount</th>
-                        <th>Type</th>
-                        <th>Valid</th>
-                        <th></th>
-                      </tr>
-                      <tr>
-                        <td><label class="container">
-                        <input type="checkbox">
-                        <span class="checkmark"></span>
-                        </label></td>
-                        <td>202020</td>
-                        <td>5.00</td>
-                        <td>Percent</td>
-                        <td>Manav Joshi</td>
-                        <td class="mytable_right"><button class="card__button">Edit</button>
-                        <button class="card__button">Delete</button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td><label class="container">
-                        <input type="checkbox">
-                        <span class="checkmark"></span>
-                        </label></td>
-                        <td>205520</td>
-                        <td>10.00</td>
-                        <td>Percent</td>
-                        <td>Manav Joshi</td>
-                        <td class="mytable_right"><button class="card__button">Edit</button>
-                        <button class="card__button">Delete</button>
-                        </td>
-                      </tr>
-                    </table>
+                    <div class="card__note">
+                      <div><strong> Registration date/time </strong></div>
+                    </div>
+                    <div class="card__note">
+                      <div><strong> IP address </strong></div>
+                    </div>
+                    <div class="card__note">
+                      <div><strong> Last login </strong></div>
+                    </div>
+                    <div class="card__note">
+                      <div><strong> Status </strong></div>
+                    </div>
+                  </div>
+                  <div class="card__description">
+                    <div class="card__note">
+                      <div>
+                        17.12.2019, 15:03
+                      </div>
+                    </div>
+                    <div class="card__note">
+                      <div>
+                        84.54.187.68
+                      </div>
+                    </div>
+                    <div class="card__note">
+                      <div>
+                        11.07.2020, 03:07
+                      </div>
+                    </div>
+                    <div class="card__note">
+                      <div>
+                        <input
+                          type="checkbox"
+                          name=""
+                          id=""
+                          class="card__checkbox"
+                          checked
+                        />
+                      </div>
+                    </div>
+                   
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        
+          <div class="card">
+            <div class="card__main">
               <div class="card__row">
                 <div class="card__detail">
                   <div class="card__description">
-                    <button class="card__button">Delete selected</button>
+                    <div class="card__note">
+                      <div><strong> Email </strong></div>
+                    </div>
+                    <div class="card__note">
+                      <div><strong> New password </strong></div>
+                    </div>
+                    <div class="card__note">
+                      <div>
+                        <strong>
+                          Name
+                        </strong>
+                      </div>
+                    </div>
+                    <div class="card__note">
+                      <div><strong> Phone </strong></div>
+                    </div>
+                  </div>
+                  <div class="card__description">
+                    <div class="card__note">
+                      <div>
+                        <input type="email" name="" id="" />
+                      </div>
+                    </div>
+                    <div class="card__note">
+                      <div>
+                        <input type="password" name="" id="" />
+                      </div>
+                    </div>
+                    <div class="card__note">
+                      <div>
+                        <input type="text" name="" id="" />
+                      </div>
+                    </div>
+                    <div class="card__note">
+                      <div>
+                        <input type="tel" name="" id="" />
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+
+          <!--save cancel buttons-->
+          <div class="card">
+            <div class="card__main">
+              <div
+                class="card__row"
+                style="display: flex; justify-content: space-evenly;"
+              >
+                <button class="card__button">Save</button>
+                <button class="card__button">Cancel</button>
+              </div>
+            </div>
           </div>
         </div>
         <!-- /.main-cards -->
