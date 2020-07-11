@@ -19,7 +19,7 @@ body {
   }
 
   input {
-  width: 100px;
+  width: 50%;
 }
 }
 
@@ -791,7 +791,7 @@ select {
   width: 190px;
 }
 input {
-  width: 170px;
+  max-width:  170px;
 }
 
 
