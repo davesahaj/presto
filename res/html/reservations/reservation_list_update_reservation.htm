@@ -11,6 +11,11 @@
       .card__main:after {
         width: 0px;
       }
+      @media only screen and (min-width: 65.625em) {
+        .main__cards {
+          column-count: 1;
+        }
+      }
 
       .card__detail:hover {
         background-color: #fff;
@@ -63,7 +68,7 @@
         </div>
       </header>
 
-     <aside class="sidenav">
+      <aside class="sidenav">
         <div class="sidenav__brand">
           <i class="fas fa-feather-alt sidenav__brand-icon"></i>
           <a class="sidenav__brand-link" href="../dashboard.htm">Presto</a>
@@ -156,7 +161,9 @@
                   <a href="../../html/settings/TnC.htm">T&Cs</a>
                 </li>
                 <li class="subList__item">
-                  <a href="../../html/settings/notifications.htm">Notifications</a>
+                  <a href="../../html/settings/notifications.htm"
+                    >Notifications</a
+                  >
                 </li>
               </ul>
             </li>
@@ -177,7 +184,9 @@
                 </li>
                 <!--general-->
                 <li class="subList__item">
-                  <a href="../../html/system/email_settings.htm">Email Settings</a>
+                  <a href="../../html/system/email_settings.htm"
+                    >Email Settings</a
+                  >
                 </li>
                 <li class="subList__item">
                   <a href="../../html/system/sms_settings.htm">SMS Settings</a>
@@ -198,9 +207,7 @@
               </div>
               <ul class="subList subList--hidden">
                 <li class="subList__item">
-                  <a href="../../html/system/captcha_and_spam.htm"
-                    >Captchas</a
-                  >
+                  <a href="../../html/system/captcha_and_spam.htm">Captchas</a>
                 </li>
               </ul>
             </li>
@@ -257,13 +264,97 @@
                     <div class="card__note">
                       <div><strong>From Date/Time</strong></div>
                       <div>
-                        input-calendar
+                        <input type="date" />
+                      </div>
+                      <div>
+                        <select autocomplete="off">
+                          <option value="0">00</option>
+                          <option value="1">01</option>
+                          <option value="2">02</option>
+                          <option value="3">03</option>
+                          <option value="4">04</option>
+                          <option value="5">05</option>
+                          <option value="6">06</option>
+                          <option value="7">07</option>
+                          <option value="8">08</option>
+                          <option value="9" selected>09</option>
+                          <option value="10">10</option>
+                          <option value="11">11</option>
+                          <option value="12">12</option>
+                          <option value="13">13</option>
+                          <option value="14">14</option>
+                          <option value="15">15</option>
+                          <option value="16">16</option>
+                          <option value="17">17</option>
+                          <option value="18">18</option>
+                          <option value="19">19</option>
+                          <option value="20">20</option>
+                          <option value="21">21</option>
+                          <option value="22">22</option>
+                          <option value="23">23</option>
+                        </select>
+                        <select>
+                          <option value="00">00</option>
+                          <option value="05">05</option>
+                          <option value="10">10</option>
+                          <option value="15">15</option>
+                          <option value="20">20</option>
+                          <option value="25">25</option>
+                          <option value="30">30</option>
+                          <option value="35">35</option>
+                          <option value="40">40</option>
+                          <option value="45">45</option>
+                          <option value="50">50</option>
+                          <option value="55">55</option>
+                        </select>
                       </div>
                     </div>
                     <div class="card__note">
                       <div><strong>To Date/Time</strong></div>
                       <div>
-                        input-calendar
+                        <input type="date" />
+                      </div>
+                      <div>
+                        <select autocomplete="off">
+                          <option value="0">00</option>
+                          <option value="1">01</option>
+                          <option value="2">02</option>
+                          <option value="3">03</option>
+                          <option value="4">04</option>
+                          <option value="5">05</option>
+                          <option value="6">06</option>
+                          <option value="7">07</option>
+                          <option value="8">08</option>
+                          <option value="9" selected>09</option>
+                          <option value="10">10</option>
+                          <option value="11">11</option>
+                          <option value="12">12</option>
+                          <option value="13">13</option>
+                          <option value="14">14</option>
+                          <option value="15">15</option>
+                          <option value="16">16</option>
+                          <option value="17">17</option>
+                          <option value="18">18</option>
+                          <option value="19">19</option>
+                          <option value="20">20</option>
+                          <option value="21">21</option>
+                          <option value="22">22</option>
+                          <option value="23">23</option>
+                        </select>
+                        <select>
+                          <option value="00">00</option>
+                          <option value="05">05</option>
+                          <option value="10">10</option>
+                          <option value="15">15</option>
+                          <option value="20">20</option>
+                          <option value="25">25</option>
+                          <option value="30">30</option>
+                          <option value="35">35</option>
+                          <option value="40">40</option>
+                          <option value="45">45</option>
+                          <option value="50">50</option>
+                          <option value="55">55</option>
+                        </select>
                       </div>
                     </div>
                   </div>
@@ -275,25 +366,31 @@
                     <div class="card__note">
                       <div><strong>Unique ID</strong></div>
                       <div>
-                        input
+                        <input type="text" name="" id="" />
                       </div>
                     </div>
                     <div class="card__note">
                       <div><strong>Status</strong></div>
                       <div>
-                        dropdown
+                        <select name="" id="">
+                          <option value="">--Choose--</option>
+                          <option value="">Cancelled</option>
+                          <option value="">Confirmed</option>
+                          <option value="">Enquiry</option>
+                          <option value="">Pending</option>
+                        </select>
                       </div>
                     </div>
                     <div class="card__note">
                       <div><strong>Deposit Fee</strong></div>
                       <div>
-                        input
+                        <input type="number" name="" id="" placeholder="$" />
                       </div>
                     </div>
                     <div class="card__note">
                       <div><strong>Voucher Code</strong></div>
                       <div>
-                        input
+                        <input type="text" />
                       </div>
                     </div>
                   </div>
@@ -305,18 +402,28 @@
                     <div class="card__note">
                       <div><strong>Payment Method</strong></div>
                       <div>
-                        Dropdown
+                        <select name="" id="">
+                          <option value="">
+                            --Choose--
+                          </option>
+                          <option value="">Cash</option>
+                        </select>
                       </div>
                     </div>
                     <div class="card__note">
                       <div><strong>Deposit Paid</strong></div>
                       <div>
-                        checkbox
+                        <input
+                          type="checkbox"
+                          name=""
+                          id=""
+                          class="card__checkbox"
+                        />
                       </div>
                     </div>
                     <div class="card__note">
                       <div><strong>People</strong></div>
-                      <div>4</div>
+                      <div><input type="number" name="" value="4" id="" /></div>
                     </div>
                   </div>
                 </div>
@@ -327,7 +434,21 @@
                     <div class="card__note">
                       <div><strong>Table Name</strong></div>
                       <div>
-                        Dropdown
+                        <select name="" id="">
+                          <option value="">1</option>
+                          <option value="">2</option>
+                          <option value="">3</option>
+                          <option value="">4</option>
+                          <option value="">5</option>
+                          <option value="">6</option>
+                          <option value="">7</option>
+                          <option value="">8</option>
+                          <option value="">9</option>
+                          <option value="">10</option>
+                          <option value="">11</option>
+                          <option value="">12</option>
+                          <option value="">13</option>
+                        </select>
                       </div>
                     </div>
                   </div>
@@ -350,19 +471,24 @@
                     <div class="card__note">
                       <div><strong>Title</strong></div>
                       <div>
-                        Dropdown
+                        <select name="" id="">
+                          <option value="">--Choose</option>
+                          <option value="">Mr</option>
+                          <option value="">Mrs</option>
+                          <option value="">Ms</option>
+                        </select>
                       </div>
                     </div>
                     <div class="card__note">
                       <div><strong>First Name</strong></div>
                       <div>
-                        input
+                        <input type="text">
                       </div>
                     </div>
                     <div class="card__note">
                       <div><strong>Last Name</strong></div>
                       <div>
-                        input
+                        <input type="text">
                       </div>
                     </div>
                   </div>
@@ -374,19 +500,19 @@
                     <div class="card__note">
                       <div><strong>Email</strong></div>
                       <div>
-                        input
+                        <input type="text">
                       </div>
                     </div>
                     <div class="card__note">
                       <div><strong>Phone</strong></div>
                       <div>
-                        input
+                        <input type="tel" name="" id="">
                       </div>
                     </div>
                     <div class="card__note">
                       <div><strong>Company name</strong></div>
                       <div>
-                        input
+                        <input type="text">
                       </div>
                     </div>
                   </div>
@@ -398,19 +524,19 @@
                     <div class="card__note">
                       <div><strong>Address</strong></div>
                       <div>
-                        input
+                        <input type="text">
                       </div>
                     </div>
                     <div class="card__note">
                       <div><strong>City</strong></div>
                       <div>
-                        input
+                        <input type="text">
                       </div>
                     </div>
                     <div class="card__note">
                       <div><strong>Pin Code</strong></div>
                       <div>
-                        input
+                        <input type="text">
                       </div>
                     </div>
                   </div>
