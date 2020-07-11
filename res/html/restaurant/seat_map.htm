@@ -64,8 +64,8 @@
 
         <div class="header__avatar">
           <div class="dropdown">
-            <ul class="dropdown__list">
-              <li class="dropdown__list-item">
+            <ul class="dropdown__list">              <li class="dropdown__list-item"  onclick="location.href='../user_profile.htm';">
+
                 <span class="dropdown__icon"><i class="far fa-user"></i></span>
                 <span class="dropdown__title">my profile</span>
               </li>
@@ -251,121 +251,36 @@
           <div class="main-header__intro-wrapper">
             <div class="main-header__welcome">
               <div class="main-header__welcome-title text-light">
-                <strong>
-                  Email Settings
-                </strong>
+                <strong>Backend Dependency</strong>
               </div>
               <div class="main-header__welcome-subtitle text-light">
-                Use the form below to define the settings for sending emails.
+                This page relies on the backend to generate its contents! Which is not in the current scope :-)
               </div>
             </div>
           </div>
         </div>
 
         <div class="main__cards">
-          <!--Working Time-->
           <div class="card">
             <div class="card__main">
               <div class="card__row">
                 <div class="card__detail">
+                  <div class="card__source text-bold"></div>
+
                   <div class="card__description">
-                    <div class="card__note">
-                      <div><strong>Messages sent to</strong></div>
-                    </div>
-                    <div class="card__note">
-                      <div>
-                        <select class="sb_1">
-                          <option value="1">Client</option>
-                          <option value="2">Administrator</option>
-                        </select>
-                      </div>
-                    </div>
+                  
                   </div>
                 </div>
               </div>
               <div class="card__row">
-                <div class="card__detail">
+                <div class="card__detail" style="overflow-x: auto;">
+                  <div class="card__source text-bold"></div>
                   <div class="card__description">
-                    <div class="card__note">
-                      <div><strong>Email type</strong></div>
-                    </div>
-                    <div class="card__note">
-                      <div>
-                        <select class="sb_1">
-                          <option value="1">Send confirmation email</option>
-                          <option value="2">Send payment confirmation email</option>
-                          <option value="3">Send cancellation email</option>
-                        </select>
-                      </div>
-                    </div>
+                 <div class="timetable">
+                     
+                 </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="cover">
-            <div id="box"></div>
-          </div>
-          <script>
-            var box = document.getElementById("box");
-            var diff = {};
-            var getBoxPos = function() {
-              return {
-                x: box.getBoundingClientRect().x,
-                y: box.getBoundingClientRect().y
-              };
-            };
-            var calcDiff = function(x, y) {
-              var boxPos = getBoxPos();
-              diff = {
-                x: x - boxPos.x,
-                y: y - boxPos.y
-              };
-            };
-            var handleMouseMove = function(event) {
-              var x = event.x;
-              var y = event.y;
-              x -= diff.x;
-              y -= diff.y;
-
-              console.log("X " + x + " Y " + y);
-              box.style.position = "absolute";
-              box.style.transform = "translate(" + x + "px ," + y + "px)";
-            };
-
-            box.addEventListener("mousedown", function(e) {
-              calcDiff(e.x, e.y);
-              box.addEventListener("mousemove", handleMouseMove, true);
-            });
-
-            box.addEventListener("mouseup", function(e) {
-              console.log("onmouseup");
-              box.removeEventListener("mousemove", handleMouseMove, true);
-            });
-          </script>
-
-          <div class="card">
-            <div class="card__main">
-              <div class="card__row">
-                <div class="card__detail">
-                  <div class="card__source text-bold">{Title}</div>
-                  <div class="card__description">
-                    <img src="../../images/floor1.jpg" style="border:1px solid black" width="550" height="350">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--save cancel buttons-->
-          <div class="card">
-            <div class="card__main">
-              <div
-                class="card__row"
-                style="display: flex; justify-content: space-evenly;"
-              >
-                <button class="card__button">Save</button>
-                <button class="card__button">Cancel</button>
               </div>
             </div>
           </div>
